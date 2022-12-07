@@ -5,12 +5,15 @@
 @import "normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-:root {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
 }
 html {
   font-size: 62.5%;
@@ -18,12 +21,21 @@ html {
     color: #222222;
   }
 }
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
 body {
+  min-height: 100vh;
   font-family: "Montserrat";
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
-input {
+form, input,button {
   outline: none;
 }
+

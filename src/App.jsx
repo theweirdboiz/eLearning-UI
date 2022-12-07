@@ -6,7 +6,7 @@ import DefaultLayout from "@layouts";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="bg-backGround">
         <Routes>
           {publicRoutes.map((route, index) => {
             const Page = route.component;
