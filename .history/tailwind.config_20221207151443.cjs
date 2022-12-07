@@ -8,8 +8,7 @@ module.exports = {
       },
     },
     colors: {
-      primary: "#0056d2",
-      backGround: "#f5f7f8",
+      heading:#273167
     },
     container: {
       center: true,

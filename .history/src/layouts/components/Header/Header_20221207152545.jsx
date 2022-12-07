@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="container">
       <div className="my-[10px] flex items-center justify-between gap-x-24">
-        <div className="flex gap-x-32 w-[50%]">
+        <div className="flex gap-x-24 w-[50%]">
           <img
             className="w-auto h-[34px]"
             src="https://unica.vn/media/img/logo-unica.svg"
@@ -12,7 +12,7 @@ const Header = () => {
           />
           <div className="relative w-full">
             <input
-              className="w-full h-[38px] p-6 rounded-3xl border-2 border-backGround focus:border-primary shadow"
+              className="w-full h-[38px] p-6 rounded-3xl border-2"
               type="text"
               placeholder="Tìm khóa học, giảng viên"
             />
@@ -34,8 +34,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="flex items-center w-[50%] gap-x-20">
-          <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-xl">
+        <div className="flex items-center w-[50%] gap-x-24">
+          <button className="flex items-baseline gap-x-3">
             <span>Kích hoạt khóa học</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,7 @@ const Header = () => {
               />
             </svg>
           </button>
-          <button>Hỗ trợ</button>
-          <button className="border-2 border-primary rounded-full py-3 px-6">
-            Đăng nhập
-          </button>
+          <button>Đăng nhập</button>
 
           <div className="">
             <svg
@@ -64,7 +61,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[24px] h-[26px]"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"

@@ -7,10 +7,6 @@ module.exports = {
         "home-logo": "url('https://unica.vn/media/img/logo-unica.svg')",
       },
     },
-    colors: {
-      primary: "#0056d2",
-      backGround: "#f5f7f8",
-    },
     container: {
       center: true,
       screens: {

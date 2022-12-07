@@ -3,16 +3,16 @@ import React from "react";
 const Header = () => {
   return (
     <div className="container">
-      <div className="my-[10px] flex items-center justify-between gap-x-24">
-        <div className="flex gap-x-32 w-[50%]">
+      <div className="my-[10px] flex items-center">
+        <div className="flex gap-x-24 w-[50%]">
           <img
-            className="w-auto h-[34px]"
+            className="w-[138px] h-[34px]"
             src="https://unica.vn/media/img/logo-unica.svg"
             alt=""
           />
-          <div className="relative w-full">
+          <div className="relative">
             <input
-              className="w-full h-[38px] p-6 rounded-3xl border-2 border-backGround focus:border-primary shadow"
+              className="w-[500px] h-[38px] p-6 rounded-3xl border-2"
               type="text"
               placeholder="Tìm khóa học, giảng viên"
             />
@@ -34,29 +34,25 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="flex items-center w-[50%] gap-x-20">
-          <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-xl">
-            <span>Kích hoạt khóa học</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-              />
-            </svg>
-          </button>
-          <button>Hỗ trợ</button>
-          <button className="border-2 border-primary rounded-full py-3 px-6">
-            Đăng nhập
-          </button>
-
+        <button className="flex items-baseline gap-x-3">
+          <span>Kích hoạt khóa học</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+            />
+          </svg>
+        </button>
+        <div className="flex items-center gap-x-[24px]">
+          <button>Đăng nhập</button>
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +60,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[24px] h-[26px]"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"

@@ -12,7 +12,7 @@ const Header = () => {
           />
           <div className="relative w-full">
             <input
-              className="w-full h-[38px] p-6 rounded-3xl border-2 border-backGround focus:border-primary shadow"
+              className="w-full h-[38px] p-6 rounded-3xl border-2 border-transparent focus:border-primary "
               type="text"
               placeholder="Tìm khóa học, giảng viên"
             />
@@ -42,8 +42,8 @@ const Header = () => {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
+              stroke="#fff"
+              className="w-6 h-6 text-[#000]"
             >
               <path
                 strokeLinecap="round"

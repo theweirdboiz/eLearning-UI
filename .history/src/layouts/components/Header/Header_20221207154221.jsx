@@ -12,7 +12,7 @@ const Header = () => {
           />
           <div className="relative w-full">
             <input
-              className="w-full h-[38px] p-6 rounded-3xl border-2 border-backGround focus:border-primary shadow"
+              className="w-full h-[38px] p-6 rounded-3xl border-2 border-transparent focus:border-primary "
               type="text"
               placeholder="Tìm khóa học, giảng viên"
             />
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center w-[50%] gap-x-20">
-          <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-xl">
+          <button className="flex items-baseline gap-x-3 bg-backGround">
             <span>Kích hoạt khóa học</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
