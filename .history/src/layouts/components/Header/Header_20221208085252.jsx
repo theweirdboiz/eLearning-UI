@@ -13,7 +13,7 @@ const Header = () => {
             />
             <div className="relative w-full">
               <input
-                className="w-full h-[38px] p-6 rounded-full border-2 border-backGround focus:border-primary shadow text-[14px] font-semibold"
+                className="w-full h-[38px] p-6 rounded-full border-2 border-backGround focus:border-primary shadow"
                 type="text"
                 placeholder="Tìm khóa học, giảng viên"
               />
@@ -36,7 +36,7 @@ const Header = () => {
             </div>
           </a>
           <div className="flex items-center w-[50%] gap-x-20">
-            <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-full text-[14px] font-semibold">
+            <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-full">
               <span>Kích hoạt khóa học</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,8 +53,8 @@ const Header = () => {
                 />
               </svg>
             </button>
-            <button className="text-[14px] font-semibold">Hỗ trợ</button>
-            <button className="border-2 border-primary rounded-full py-3 px-6 text-[14px] font-semibold">
+            <button>Hỗ trợ</button>
+            <button className="border-2 border-primary rounded-full py-3 px-6">
               Đăng nhập
             </button>
 

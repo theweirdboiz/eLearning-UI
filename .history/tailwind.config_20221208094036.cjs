@@ -9,10 +9,9 @@ module.exports = {
     },
     colors: {
       primary: "#0056d2",
-      backGround: "#F7F7F7",
+      backGround: "#f5f7f8",
       white: "#fff",
       lightBlack: "#555",
-      yellow: "#FED049",
     },
     container: {
       center: true,

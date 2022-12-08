@@ -29,7 +29,6 @@ const Banner = () => (
       swipeable={true}
       emulateTouch={true}
       autoPlay={true}
-      infiniteLoop={true}
     >
       {slides.map((slide, index) => (
         <div key={index} className="react-carousel-slide">

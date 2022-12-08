@@ -1,7 +1,5 @@
 import React from "react";
 import Banner from "@pages/Home/Banner";
-import Course from "@pages/Home/Course";
-
 const Home = () => {
   return (
     <div className="container my-5">
@@ -44,49 +42,6 @@ const Home = () => {
           <div className="shadow h-full">
             <Banner></Banner>
           </div>
-        </div>
-      </div>
-      <div className="my-[60px]">
-        <h1 className="text-[20px] uppercase font-bold my-5">Top bán chạy</h1>
-        <div className="grid grid-cols-4 gap-[20px] shadow-md">
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-        </div>
-      </div>
-      <div className="my-[60px]">
-        <h1 className="text-[20px] uppercase font-bold my-5">
-          Siêu ưu đãi hôm nay
-        </h1>
-        <div className="grid grid-cols-4 gap-[20px] shadow-md">
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-        </div>
-      </div>
-      <div className="my-[30px]">
-        <h1 className="text-[20px] uppercase font-bold my-5">
-          Kinh doanh khởi nghiệp
-        </h1>
-        <div className="grid grid-cols-4 gap-[20px] shadow-md">
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
-          <Course></Course>
         </div>
       </div>
     </div>
