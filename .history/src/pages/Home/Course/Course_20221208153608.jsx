@@ -1,7 +1,6 @@
 import React from "react";
 
 const Course = ({ isLast }) => {
-  console.log(isLast);
   const left = "translate-x-[80%]";
   const right = "";
   return (
@@ -116,8 +115,9 @@ const Course = ({ isLast }) => {
         </div>
       </a>
       <div
-        className={`${right || left}
-         w-[340px] absolute top-0 translate-y-[-20%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
+        className={`${
+          isLast ? left : right
+        } w-[340px] absolute top-0 translate-y-[-20%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
       >
         <h1 className="font-semibold text-[16px] min-h-[20px]">
           Nhập môn chứng khoán

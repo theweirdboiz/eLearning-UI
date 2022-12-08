@@ -86,7 +86,7 @@ const Home = () => {
           <Course></Course>
           <Course></Course>
           <Course></Course>
-          <Course isLast></Course>
+          <Course></Course>
         </div>
       </div>
     </div>

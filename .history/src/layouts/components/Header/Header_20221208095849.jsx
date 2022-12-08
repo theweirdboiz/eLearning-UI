@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="py-[10px] bg-white shadow-sm">
+    <div className="py-[10px] bg-white border-b-[1px]">
       <div className="container">
         <div className="flex items-center justify-between gap-x-24">
           <a href="#" className="flex gap-x-32 w-[50%]">

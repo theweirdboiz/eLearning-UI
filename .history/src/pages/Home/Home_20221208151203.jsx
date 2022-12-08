@@ -78,7 +78,7 @@ const Home = () => {
         <h1 className="text-[20px] uppercase font-bold my-5">
           Kinh doanh khởi nghiệp
         </h1>
-        <div className="grid grid-cols-4 gap-y-[20px] shadow-md">
+        <div className="grid grid-cols-4 shadow-md">
           <Course></Course>
           <Course></Course>
           <Course></Course>
@@ -86,7 +86,7 @@ const Home = () => {
           <Course></Course>
           <Course></Course>
           <Course></Course>
-          <Course isLast></Course>
+          <Course></Course>
         </div>
       </div>
     </div>

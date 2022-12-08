@@ -8,34 +8,34 @@ const Home = () => {
       <div className="flex gap-6 w-full">
         <div className="w-[25%] bg-white">
           <ul className="shadow bg-white">
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
-            <li className="p-4 hover:bg-lightBlue border-b border-lightBlue cursor-pointer">
+            <li className="p-4 hover:bg-lightBlue border-b border-x-lightBlue cursor-pointer">
               <a href="">Test</a>
             </li>
           </ul>
@@ -78,7 +78,7 @@ const Home = () => {
         <h1 className="text-[20px] uppercase font-bold my-5">
           Kinh doanh khởi nghiệp
         </h1>
-        <div className="grid grid-cols-4 gap-y-[20px] shadow-md">
+        <div className="grid grid-cols-4 gap-[20px] shadow-md">
           <Course></Course>
           <Course></Course>
           <Course></Course>
@@ -86,7 +86,7 @@ const Home = () => {
           <Course></Course>
           <Course></Course>
           <Course></Course>
-          <Course isLast></Course>
+          <Course></Course>
         </div>
       </div>
     </div>

@@ -1,12 +1,9 @@
 import React from "react";
 
-const Course = ({ isLast }) => {
-  console.log(isLast);
-  const left = "translate-x-[80%]";
-  const right = "";
+const Course = () => {
   return (
-    <div className="rounded-xl relative shadow-2xl group/course p-[20px] cursor-pointer">
-      <a href="overflow-hidden bg-lightBlue">
+    <div className="bg-lightBlue rounded-xl relative shadow-2xl group/course">
+      <a href="overflow-hidden">
         <span className="absolute bg-primary text-white px-2 py-1 rounded">
           72%
         </span>
@@ -115,35 +112,32 @@ const Course = ({ isLast }) => {
           </div>
         </div>
       </a>
-      <div
-        className={`${right || left}
-         w-[340px] absolute top-0 translate-y-[-20%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
-      >
-        <h1 className="font-semibold text-[16px] min-h-[20px]">
+      <div className="w-[340px] absolute top-0 translate-y-[-20%] translate-x-[85%] group-hover/course:visible invisible shadow-md p-10 rounded-lg border-2 border-primary bg-white z-20">
+        <h1 className="font-semibold text-[16px] min-h-[40px]">
           Nhập môn chứng khoán
         </h1>
         <span className="px-3 py-2 text-[12px] bg-primary text-white rounded-md">
           Best seller
         </span>
-        <p className="mt-5 line-clamp-3 overflow-hidden text-[16px]">
+        <p className="mt-5 line-clamp-3 overflow-hidden">
           Khóa học chứng khoán nhập môn sẽ giúp bạn nắm bắt được kiến thức, đầu
           tư chứng khoán đầy đủ. Bài bản và chi tiết nhất dành cho người mới bắt
           đầu tham gia
         </p>
         <ul className="m-4">
-          <li className="flex items-start gap-x-3 text-[14px]">
+          <li className="flex gap-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[80px] h-[20px]"
+              className="w-[200px] h-[200px]"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M4.5 12.75l6 6 9-13.5"
+                d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"
               />
             </svg>
 
@@ -152,14 +146,14 @@ const Course = ({ isLast }) => {
               khoán và tiềm năng lợi nhuận khổng lồ của TTCK
             </span>
           </li>
-          <li className="flex items-start gap-x-3 text-[14px]">
+          <li className="flex items-center gap-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[80px] h-[20px]"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -167,20 +161,19 @@ const Course = ({ isLast }) => {
                 d="M4.5 12.75l6 6 9-13.5"
               />
             </svg>
-
             <span>
               Kiến thức cơ bản nhất về thị trường chứng khoán, về đầu tư chứng
               khoán và tiềm năng lợi nhuận khổng lồ của TTCK
             </span>
-          </li>
-          <li className="flex items-start gap-x-3 text-[14px]">
+          </li>{" "}
+          <li className="flex items-center gap-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-[80px] h-[20px]"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -194,24 +187,7 @@ const Course = ({ isLast }) => {
             </span>
           </li>
         </ul>
-        <a className="flex gap-4 items-center justify-center rounded-lg text-white font-medium w-full px-5 py-2 bg-primary">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-            />
-          </svg>
-
-          <span>Thêm vào giỏ hàng</span>
-        </a>
+        <a>Thêm vào giỏ hàng</a>
       </div>
     </div>
   );

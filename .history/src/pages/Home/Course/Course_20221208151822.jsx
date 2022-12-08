@@ -1,12 +1,9 @@
 import React from "react";
 
-const Course = ({ isLast }) => {
-  console.log(isLast);
-  const left = "translate-x-[80%]";
-  const right = "";
+const Course = () => {
   return (
     <div className="rounded-xl relative shadow-2xl group/course p-[20px] cursor-pointer">
-      <a href="overflow-hidden bg-lightBlue">
+      <a href="overflow-hidden bg-lightBlue p-4">
         <span className="absolute bg-primary text-white px-2 py-1 rounded">
           72%
         </span>
@@ -115,10 +112,7 @@ const Course = ({ isLast }) => {
           </div>
         </div>
       </a>
-      <div
-        className={`${right || left}
-         w-[340px] absolute top-0 translate-y-[-20%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
-      >
+      <div className="w-[340px] absolute top-0 translate-y-[-20%] translate-x-[85%] group-hover/course:visible invisible shadow-md p-10 rounded-lg border-2 border-primary bg-white z-20">
         <h1 className="font-semibold text-[16px] min-h-[20px]">
           Nhập môn chứng khoán
         </h1>
