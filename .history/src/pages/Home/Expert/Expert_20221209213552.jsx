@@ -22,15 +22,15 @@ const Expert = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className=""
       >
-        <SwiperSlide className="min-h-[300px] mb-[40px]">
-          <div className="px-[45px] pt-[40px] pb-[50px] flex flex-col shadow-xl rounded-3xl">
+        <SwiperSlide className="min-h-[300px]">
+          <div className="px-[25px] pt-[25px] pb-[50px] flex flex-col shadow-xl rounded-lg">
             <img
               className="rounded-full w-[150px] h-[150px] mb-[30px] shadow-xl"
               src="https://kt.city/_next/image?url=https%3A%2F%2Fstatic.kt.city%2Fe0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg&w=256&q=100"
@@ -42,8 +42,8 @@ const Expert = () => {
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] mb-[40px]">
-          <div className="px-[45px] pt-[40px] pb-[50px] flex flex-col shadow-xl rounded-3xl">
+        <SwiperSlide className="min-h-[300px]">
+          <div className="px-[25px] pt-[25px] pb-[50px] flex flex-col shadow-xl rounded-lg">
             <img
               className="rounded-full w-[150px] h-[150px] mb-[30px] shadow-xl"
               src="https://kt.city/_next/image?url=https%3A%2F%2Fstatic.kt.city%2Fe0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg&w=256&q=100"
@@ -55,8 +55,8 @@ const Expert = () => {
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] mb-[40px]">
-          <div className="px-[45px] pt-[40px] pb-[50px] flex flex-col shadow-xl rounded-3xl">
+        <SwiperSlide className="min-h-[300px]">
+          <div className="px-[25px] pt-[25px] pb-[50px] flex flex-col shadow-xl rounded-lg">
             <img
               className="rounded-full w-[150px] h-[150px] mb-[30px] shadow-xl"
               src="https://kt.city/_next/image?url=https%3A%2F%2Fstatic.kt.city%2Fe0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg&w=256&q=100"
@@ -68,8 +68,8 @@ const Expert = () => {
             </span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] mb-[40px]">
-          <div className="px-[45px] pt-[40px] pb-[50px] flex flex-col shadow-xl rounded-3xl">
+        <SwiperSlide className="min-h-[300px]">
+          <div className="px-[25px] pt-[25px] pb-[50px] flex flex-col shadow-xl rounded-lg">
             <img
               className="rounded-full w-[150px] h-[150px] mb-[30px] shadow-xl"
               src="https://kt.city/_next/image?url=https%3A%2F%2Fstatic.kt.city%2Fe0ebee87-aefb-40bf-96a3-9a53986dfc17.jpg&w=256&q=100"

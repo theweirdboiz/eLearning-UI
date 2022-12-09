@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="container pt-[40px] bg-register-expert bg-top">
       <div className=" grid grid-cols-5">
-        <div className="max-w-[200px] text-[14px]">
+        <div className="max-w-[220px] text-[14px]">
           <a href="max-h-[35px]">
             <img
               className="max-h-[35px]"
@@ -23,26 +23,26 @@ const Footer = () => {
           <p className="mt-[20px]">Hotline: 02873098979</p>
           <p className="mt-[20px]">Giờ làm việc 8h30-18h từ thứ 2 tới thứ 6.</p>
         </div>
-        <div className="max-w-[200px] text-[14px]">
+        <div className="max-w-[220px] text-[14px]">
           <h3 className="font-semibold mb-[20px]">Địa chỉ</h3>
           <p className="mt-[20px]">
             202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP HCM
           </p>
         </div>
-        <div className="max-w-[200px] text-[14px]">
+        <div className="max-w-[220px] text-[14px]">
           <h3 className="font-semibold mb-[20px]">Hướng dẫn</h3>
           <p className="mt-[20px]">KTcity 101</p>
           <p className="mt-[20px]">Giới thiệu</p>
           <p className="mt-[20px]">Quy chế hoạt động</p>
         </div>
-        <div className="max-w-[200px] text-[14px]">
+        <div className="max-w-[220px] text-[14px]">
           <h3 className="font-semibold mb-[20px]">Khám phá</h3>
           <p className="mt-[20px]">Solution</p>
           <p className="mt-[20px]">Affiliate Program</p>
           <p className="mt-[20px]">Reviewer Program</p>
           <p className="mt-[20px]">Blog kiến thức</p>
         </div>
-        <div className="max-w-[200px] text-[14px]">
+        <div className="max-w-[220px] text-[14px]">
           <h3 className="font-semibold mb-[20px]">Liên kết</h3>
           <div className="flex items-baseline justify-between gap-x-4">
             <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">

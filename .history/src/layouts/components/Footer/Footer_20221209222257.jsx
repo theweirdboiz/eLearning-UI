@@ -45,19 +45,19 @@ const Footer = () => {
         <div className="max-w-[200px] text-[14px]">
           <h3 className="font-semibold mb-[20px]">Liên kết</h3>
           <div className="flex items-baseline justify-between gap-x-4">
-            <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">
+            <a className="mt-[20px] p-4 rounded-full bg-white w-[24px] h-[24px] flex items-center justify-center shadow-md cursor-pointer">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">
+            <a className="mt-[20px] p-4 rounded-full bg-white w-[24px] h-[24px] flex items-center justify-center shadow-md cursor-pointer">
               <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">
+            <a className="mt-[20px] p-4 rounded-full bg-white w-[24px] h-[24px] flex items-center justify-center shadow-md cursor-pointer">
               <FontAwesomeIcon icon={faTiktok} />
             </a>
-            <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">
+            <a className="mt-[20px] p-4 rounded-full bg-white w-[24px] h-[24px] flex items-center justify-center shadow-md cursor-pointer">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a className="mt-[20px] p-3 rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center shadow-md cursor-pointer">
+            <a className="mt-[20px] p-4 rounded-full bg-white w-[24px] h-[24px] flex items-center justify-center shadow-md cursor-pointer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>

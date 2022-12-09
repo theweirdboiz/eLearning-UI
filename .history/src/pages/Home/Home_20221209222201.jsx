@@ -174,7 +174,7 @@ const Home = () => {
         <Expert></Expert>
       </div>
       <div className="my-[60px]">
-        <div className="bg-register-expert bg-right p-20">
+        <div className="bg-register-expert bg-bottom p-20">
           <h1 className="font-semibold text-[24px] text-center">
             Trở thành expert của XXX
           </h1>
