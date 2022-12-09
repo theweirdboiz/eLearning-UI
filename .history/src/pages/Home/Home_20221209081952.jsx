@@ -76,30 +76,16 @@ const Home = () => {
         </div>
       </div>
       <div className="my-[60px">
-        <div className="grid grid-cols-3 gap-x-[40px] ">
-          <div className="shadow-md p-4">
-            <div className="flex items-center justify-between">
-              <h1 className="text-[20px] font-semibold uppercase">
-                Mới ra mắt
-              </h1>
-              <span className="text-[14px] cursor-pointer">Xem thêm</span>
-            </div>
-            <New></New>
-          </div>
-          <div>
-            <div className="flex items-center justify-between">
+        <div className="grid grid-cols-3">
+          <div className="flex items-center justify-between">
+            <div>
               <h1>Mới ra mắt</h1>
               <span>Xem thêm</span>
             </div>
             <New></New>
           </div>
-          <div>
-            <div className="flex items-center justify-between">
-              <h1>Mới ra mắt</h1>
-              <span>Xem thêm</span>
-            </div>
-            <New></New>
-          </div>
+          <New></New>
+          <New></New>
         </div>
       </div>
       <div className="my-[60px]">

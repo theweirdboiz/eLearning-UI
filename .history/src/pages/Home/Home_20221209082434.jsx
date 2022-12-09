@@ -77,7 +77,7 @@ const Home = () => {
       </div>
       <div className="my-[60px">
         <div className="grid grid-cols-3 gap-x-[40px] ">
-          <div className="shadow-md p-4">
+          <div className="shadow-md">
             <div className="flex items-center justify-between">
               <h1 className="text-[20px] font-semibold uppercase">
                 Mới ra mắt

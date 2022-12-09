@@ -1,6 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
-import "./Banner.scss";
 
 import image1 from "@assets/home/logo.svg";
 // const cx = classNames.bind(style);
