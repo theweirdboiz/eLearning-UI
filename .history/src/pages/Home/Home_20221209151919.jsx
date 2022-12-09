@@ -173,8 +173,8 @@ const Home = () => {
         </h1>
         <Expert></Expert>
       </div>
-      <div className="my-[60px]">
-        <div className="bg-register-expert bg-center p-20">
+      <div className="my-[60px] p-24">
+        <div className="bg-register-expert bg-center">
           <h1 className="font-semibold text-[24px] text-center">
             Trở thành expert của XXX
           </h1>

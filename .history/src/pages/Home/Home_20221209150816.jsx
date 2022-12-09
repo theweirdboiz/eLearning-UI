@@ -174,19 +174,14 @@ const Home = () => {
         <Expert></Expert>
       </div>
       <div className="my-[60px]">
-        <div className="bg-register-expert bg-center p-20">
+        <div className="">
           <h1 className="font-semibold text-[24px] text-center">
             Trở thành expert của XXX
           </h1>
-          <h2 className="mt-[20px] text-center">
+          <span className="mt-[20px]">
             Hơn 1000+ expert đã hợp tác cùng XXX
-          </h2>
-          <a
-            href=""
-            className="block w-60 mx-auto my-[60px] py-4 px-2 text-center border uppercase font-semibold"
-          >
-            Đăng ký ngay
-          </a>
+          </span>
+          <a href="inline-block mx-auto">Đăng ký ngay</a>
         </div>
       </div>
     </div>

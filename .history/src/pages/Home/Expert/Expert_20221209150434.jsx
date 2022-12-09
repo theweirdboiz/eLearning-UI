@@ -5,9 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/autoplay";
-
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 const Expert = () => {
   return (
@@ -16,17 +14,13 @@ const Expert = () => {
         slidesPerView={4}
         spaceBetween={30}
         slidesPerGroup={4}
-        loop
+        loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,
         }}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide className="min-h-[300px]">

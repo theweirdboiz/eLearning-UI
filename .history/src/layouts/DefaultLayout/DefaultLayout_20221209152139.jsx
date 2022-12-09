@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import Header from "@layouts/components/Header";
-import Footer from "@layouts/components/Footer";
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -10,7 +9,7 @@ const DefaultLayout = ({ children }) => {
       <div className="container">
         <div className="content">{children}</div>
       </div>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 };

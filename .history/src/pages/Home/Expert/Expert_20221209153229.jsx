@@ -16,7 +16,7 @@ const Expert = () => {
         slidesPerView={4}
         spaceBetween={30}
         slidesPerGroup={4}
-        loop
+        loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,

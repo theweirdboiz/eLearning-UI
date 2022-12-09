@@ -5,8 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/autoplay";
-
 import { Pagination, Navigation, Autoplay } from "swiper";
 
 const Expert = () => {
@@ -16,7 +14,7 @@ const Expert = () => {
         slidesPerView={4}
         spaceBetween={30}
         slidesPerGroup={4}
-        loop
+        loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,
