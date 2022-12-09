@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "@pages/Home/Banner";
 import Course from "@pages/Home/Course";
 import New from "@pages/Home/New";
-import Expert from "@pages/Home/Expert";
 
 const Home = () => {
   return (
@@ -168,10 +167,9 @@ const Home = () => {
         </div>
       </div>
       <div className="my-[60px]">
-        <h1 className="text-center text-[24px] font-bold mb-[40px]">
+        <h1 className="text-center text-[24px] font-semibold">
           Học tập xu hướng MMO, kinh doanh, tiếp thị số mới và nổi bật 2022
         </h1>
-        <Expert></Expert>
       </div>
     </div>
   );

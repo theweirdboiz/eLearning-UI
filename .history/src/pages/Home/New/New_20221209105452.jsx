@@ -104,8 +104,8 @@ const New = () => {
       modules={[Pagination]}
       className="mySwiper"
     >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
+      {slides.map((slide) => (
+        <SwiperSlide>
           <div className="p-4 max-h-[460px]">
             {slides[0].courses.map((course) => (
               <a

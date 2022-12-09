@@ -168,7 +168,7 @@ const Home = () => {
         </div>
       </div>
       <div className="my-[60px]">
-        <h1 className="text-center text-[24px] font-bold mb-[40px]">
+        <h1 className="text-center text-[24px] font-bold">
           Học tập xu hướng MMO, kinh doanh, tiếp thị số mới và nổi bật 2022
         </h1>
         <Expert></Expert>

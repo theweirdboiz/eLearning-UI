@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "@pages/Home/Banner";
 import Course from "@pages/Home/Course";
 import New from "@pages/Home/New";
-import Expert from "@pages/Home/Expert";
 
 const Home = () => {
   return (
@@ -123,7 +122,7 @@ const Home = () => {
         </div>
       </div>
       <div className="my-[60px]">
-        <h1 className="text-[24px] font-bold text-center uppercase mb-12">
+        <h1 className="text-[24px] font-bold">
           Những lý do bạn nên chọn chúng tôi
         </h1>
         <div className="flex items-center justify-between gap-x-[30px]">
@@ -133,7 +132,7 @@ const Home = () => {
             alt=""
           />
           <div className="">
-            <h1 className="mb-6 text-[24px] font-extrabold">
+            <h1>
               Nâng cao kiến thức của bạn lên từng ngày, có kết quả tương xứng
               với chi phí bỏ ra
             </h1>
@@ -148,7 +147,7 @@ const Home = () => {
         </div>
         <div className="flex items-center justify-between gap-x-[30px]">
           <div className="">
-            <h1 className="mb-6 text-[24px] font-extrabold">
+            <h1>
               Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không
               giới hạn giá trị
             </h1>
@@ -166,12 +165,6 @@ const Home = () => {
             alt=""
           />
         </div>
-      </div>
-      <div className="my-[60px]">
-        <h1 className="text-center text-[24px] font-bold mb-[40px]">
-          Học tập xu hướng MMO, kinh doanh, tiếp thị số mới và nổi bật 2022
-        </h1>
-        <Expert></Expert>
       </div>
     </div>
   );
