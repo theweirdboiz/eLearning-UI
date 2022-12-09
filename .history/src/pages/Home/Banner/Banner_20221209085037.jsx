@@ -31,7 +31,7 @@ const Banner = () => (
       stopOnHover={true}
     >
       {slides.map((slide, index) => (
-        <div key={index} className="react-carousel-slide cursor-pointer">
+        <div key={index} className="react-carousel-slide">
           <div className="image-wrapper">
             <img className="object-cover" src={slide.image} />
           </div>

@@ -35,7 +35,7 @@ const Header = () => {
               </button>
             </div>
           </a>
-          <div className="flex items-center w-[50%] gap-x-20  justify-between">
+          <div className="flex items-center w-[50%] gap-x-20">
             <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-full text-[14px] font-semibold">
               <span>Kích hoạt khóa học</span>
               <svg

@@ -108,7 +108,7 @@ const New = () => {
         <SwiperSlide>
           <div className="p-4 max-h-[460px]">
             {slides[0].courses.map((course) => (
-              <a className="flex items-center gap-x-3 cursor-pointer">
+              <a className="flex items-center gap-x-3 cursor-pointer shadow-inner">
                 <img
                   src={course.image}
                   alt=""

@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="py-[10px] bg-white shadow-sm">
       <div className="container">
-        <div className="flex items-center justify-between gap-x-24">
+        <div className="flex items-center justify-between justify-between gap-x-24">
           <a href="#" className="flex gap-x-32 w-[50%]">
             <img
               className="w-auto h-[34px]"
@@ -35,7 +35,7 @@ const Header = () => {
               </button>
             </div>
           </a>
-          <div className="flex items-center w-[50%] gap-x-20  justify-between">
+          <div className="flex items-center w-[50%] gap-x-20">
             <button className="flex items-baseline gap-x-3 bg-backGround px-4 py-4 rounded-full text-[14px] font-semibold">
               <span>Kích hoạt khóa học</span>
               <svg
