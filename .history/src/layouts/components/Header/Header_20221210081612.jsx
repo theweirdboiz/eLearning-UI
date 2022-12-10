@@ -7,13 +7,13 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between gap-x-24">
           <div className="flex items-center justify-between gap-x-[30px] w-[60%]">
-            <Link to="/" className="flex gap-x-32 w-[50%]">
+            <a href="#" className="flex gap-x-32 w-[50%]">
               <img
                 className="w-auto h-[34px]"
                 src="https://unica.vn/media/img/logo-unica.svg"
                 alt=""
               />
-            </Link>
+            </a>
             <div className="relative w-full">
               <input
                 className="w-full h-[38px] p-6 rounded-full border-2 border-backGround focus:border-primary shadow text-[14px] font-semibold"

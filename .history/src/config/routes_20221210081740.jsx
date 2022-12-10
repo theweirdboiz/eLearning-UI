@@ -2,10 +2,10 @@ const routes = {
   home: "/",
   order: "/order",
   search: "/search",
-  active: "/active",
-  help: "/help",
-  signIn: "/sign-in",
-  cart: "/cart",
+  search: "/active",
+  search: "/help",
+  search: "/sign-in",
+  search: "/cart",
 };
 
 export default routes;

@@ -115,7 +115,7 @@ const Course = ({ isLast }) => {
       </a>
       <div
         className={`${right || left}
-         w-[340px] absolute top-0 translate-y-[-35%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
+         w-[340px] absolute top-0 translate-y-[-40%] group-hover/course:visible invisible shadow-md p-10 rounded-lg bg-white z-20 before:absolute before:content-[''] before:w-[20px] before:h-[20px] before:left-0 before:top-[50%] before:bg-white before:translate-x-[-50%] before:rotate-45`}
       >
         <h1 className="font-semibold text-[16px] min-h-[20px]">
           Nhập môn chứng khoán
