@@ -2,7 +2,7 @@ import React from "react";
 
 const Help = () => {
   return (
-    <div className="container my-20">
+    <div className="container mt-20">
       <h1 className="heading">Bạn cần hỗ trợ?</h1>
       <div className="grid grid-cols-2 gap-[150px]">
         <div className="mt-[30px]">

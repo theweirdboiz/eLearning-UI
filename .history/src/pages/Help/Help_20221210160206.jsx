@@ -2,11 +2,11 @@ import React from "react";
 
 const Help = () => {
   return (
-    <div className="container my-20">
-      <h1 className="heading">Bạn cần hỗ trợ?</h1>
-      <div className="grid grid-cols-2 gap-[150px]">
+    <div className="px-20 container mt-20">
+      <h1 className="heading">Bạn cần hỗ trợ</h1>
+      <div className="flex justify-between gap-[150px]">
         <div className="mt-[30px]">
-          <div className="gap-x-3 p-6 rounded-2xl bg-lightBlue mb-[20px]">
+          <div className="gap-x-3 p-6 rounded-2xl bg-lightBlue mb-[40px]">
             <div className="flex items-center gap-x-3 p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,18 +34,10 @@ const Help = () => {
           </div>
           <form action="">
             <div className="">
-              <input
-                className="p-3 bg-lightBlue rounded-sm w-full mt-[10px]"
-                type="text"
-                placeholder="Nhập tên của bạn"
-              />
+              <input type="text" placeholder="Nhập tên của bạn" />
             </div>
             <div className="">
-              <input
-                className="p-3 bg-lightBlue rounded-sm w-full mt-[10px]"
-                type="email"
-                placeholder="Nhập email của bạn"
-              />
+              <input type="email" placeholder="Nhập email của bạn" />
             </div>
             <div className="">
               <select name="" id="">
@@ -54,31 +46,22 @@ const Help = () => {
             </div>
             <textarea
               name=""
-              className="w-full min-h-[100px] p-3 mt-[10px] bg-lightBlue rounded-md"
+              id=""
+              cols="30"
+              rows="10"
               placeholder="Nhập nội dung cần hỗ trợ"
             ></textarea>
-            <div className="">
-              <h3 className="font-semibold">Tải ảnh lên</h3>
-              <div className="grid grid-cols-3">
-                <div className="">h1</div>
-                <div className="">h2</div>
-                <div className="">h3</div>
-              </div>
+            <div className="flex justify-between">
+              <h3>Tải ảnh lên</h3>
+              <div className="">h1</div>
+              <div className="">h2</div>
+              <div className="">h3</div>
             </div>
-            <a
-              href=""
-              className="block mt-[20px] py-5 bg-primary text-white font-semibold text-center rounded-2xl"
-            >
-              Gửi yêu cầu hỗ trợ
-            </a>
+            <a href="">Gửi yêu cầu hỗ trợ</a>
           </form>
         </div>
         <div className="">
-          <img
-            className="w-full h-full"
-            src="https://kt.city/static/img-support.png"
-            alt=""
-          />
+          <img src="https://kt.city/static/img-support.png" alt="" />
         </div>
       </div>
     </div>

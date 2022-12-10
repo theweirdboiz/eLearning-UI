@@ -2,7 +2,7 @@ import React from "react";
 
 const Help = () => {
   return (
-    <div className="container my-20">
+    <div className="container mt-20">
       <h1 className="heading">Bạn cần hỗ trợ?</h1>
       <div className="grid grid-cols-2 gap-[150px]">
         <div className="mt-[30px]">
@@ -57,7 +57,7 @@ const Help = () => {
               className="w-full min-h-[100px] p-3 mt-[10px] bg-lightBlue rounded-md"
               placeholder="Nhập nội dung cần hỗ trợ"
             ></textarea>
-            <div className="">
+            <div className="flex justify-between">
               <h3 className="font-semibold">Tải ảnh lên</h3>
               <div className="grid grid-cols-3">
                 <div className="">h1</div>
