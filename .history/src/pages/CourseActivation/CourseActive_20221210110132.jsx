@@ -50,7 +50,7 @@ const CourseActive = () => {
       </div>
       <a
         href=""
-        className="px-2 py-4 flex items-center justify-center max-w-[180px] mx-auto bg-lightBlue mb-10 font-semibold gap-x-4"
+        className="px-2 py-4 flex items-center justify-center max-w-[180px] mx-auto bg-lightBlue mb-10 font-semibold"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

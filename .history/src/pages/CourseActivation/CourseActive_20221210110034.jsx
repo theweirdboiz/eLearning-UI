@@ -48,10 +48,7 @@ const CourseActive = () => {
           </svg>
         </button>
       </div>
-      <a
-        href=""
-        className="px-2 py-4 flex items-center justify-center max-w-[180px] mx-auto bg-lightBlue mb-10 font-semibold gap-x-4"
-      >
+      <a href="" className="p-4 inline-block bg-lightBlue mb-10 font-semibold">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

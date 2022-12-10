@@ -24,9 +24,9 @@ const CourseActive = () => {
         Bạn <strong>đã có</strong> tài khoản đăng nhập?, vui lòng
         <a href="">Đăng nhập tài khoản</a>
       </p>
-      <div className="mt-20 my-10 flex justify-center gap-x-4">
+      <label htmlFor="">Nhập mã kích hoạt</label>
+      <div className="my-10 flex justify-center">
         <input
-          id="active"
           className="min-w-[460px] rounded-2xl shadow-lg p-4"
           type="text"
           placeholder="13x3ad3DosZ"
@@ -38,37 +38,17 @@ const CourseActive = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10"
+            className="w-6 h-6"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
+              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
             />
           </svg>
         </button>
       </div>
-      <a
-        href=""
-        className="px-2 py-4 flex items-center justify-center max-w-[180px] mx-auto bg-lightBlue mb-10 font-semibold gap-x-4"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3"
-          />
-        </svg>
-
-        <span>Kích hoạt ngay</span>
-      </a>
+      <a href="">Kích hoạt ngay</a>
       <p>Vui lòng đăng nhập trước khi nhập kích hoạt mã</p>
       <p>Hỗ trợ: 19001568 || 090 488 6095</p>
     </div>

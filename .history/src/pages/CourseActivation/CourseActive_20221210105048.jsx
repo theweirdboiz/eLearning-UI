@@ -24,51 +24,16 @@ const CourseActive = () => {
         Bạn <strong>đã có</strong> tài khoản đăng nhập?, vui lòng
         <a href="">Đăng nhập tài khoản</a>
       </p>
-      <div className="mt-20 my-10 flex justify-center gap-x-4">
+      <div className="flex flex-col items-center relative">
+        <label htmlFor="">Nhập mã kích hoạt</label>
         <input
-          id="active"
-          className="min-w-[460px] rounded-2xl shadow-lg p-4"
+          className="min-w-[460px] rounded-2xl border border-b-lightBlue"
           type="text"
           placeholder="13x3ad3DosZ"
         />
-        <button className="">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-10 h-10"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-        </button>
+        <button></button>
       </div>
-      <a
-        href=""
-        className="px-2 py-4 flex items-center justify-center max-w-[180px] mx-auto bg-lightBlue mb-10 font-semibold gap-x-4"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 9l6-6m0 0l6 6m-6-6v12a6 6 0 01-12 0v-3"
-          />
-        </svg>
-
-        <span>Kích hoạt ngay</span>
-      </a>
+      <a href="">Kích hoạt ngay</a>
       <p>Vui lòng đăng nhập trước khi nhập kích hoạt mã</p>
       <p>Hỗ trợ: 19001568 || 090 488 6095</p>
     </div>
