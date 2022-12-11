@@ -6,6 +6,8 @@ import Support from "@pages/Support";
 import Auth from "@pages/Auth";
 import Cart from "@pages/Cart";
 
+import { AuthLayout } from "@components/layouts";
+
 // Public routes
 const publicRoutes = [
   { path: config.routes.home, component: Home },
