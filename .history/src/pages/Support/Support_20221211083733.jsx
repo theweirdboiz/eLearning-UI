@@ -47,9 +47,22 @@ const Help = () => {
                 placeholder="Nhập email của bạn"
               />
             </div>
-            <div className="">
-              <select name="" id="">
-                <option value="">Sự cố đơn hàng</option>
+            <div className="mt-5">
+              <label
+                for="default"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Default select
+              </label>
+              <select
+                id="default"
+                class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              >
+                <option selected>Sự cố đơn hàng</option>
+                <option selected>Sự cố đơn hàng</option>
+                <option selected>Sự cố đơn hàng</option>
+                <option selected>Sự cố đơn hàng</option>
+                <option selected>Sự cố đơn hàng</option>
               </select>
             </div>
             <textarea
@@ -57,12 +70,25 @@ const Help = () => {
               className="w-full min-h-[100px] p-3 mt-[10px] bg-lightBlue rounded-md"
               placeholder="Nhập nội dung cần hỗ trợ"
             ></textarea>
-            <div className="">
+            <div className="mt-[20px]">
               <h3 className="font-semibold">Tải ảnh lên</h3>
-              <div className="grid grid-cols-3">
-                <div className="">h1</div>
-                <div className="">h2</div>
-                <div className="">h3</div>
+              <div className="grid grid-cols-3 my-[10px] gap-x-4">
+                <label className="flex items-center justify-center cursor-pointer border-[1px] border-lightBlue">
+                  <input className="hidden" type="file" />
+                  <img
+                    className="max-w-[55%] "
+                    src="https://kt.city/static/icon-upload.png"
+                    alt=""
+                  />
+                </label>
+                <label className="flex items-center justify-center cursor-pointer border-[1px] border-lightBlue">
+                  <input className="hidden" type="file" />
+                  <img src="https://kt.city/static/icon-upload.png" alt="" />
+                </label>
+                <label className="flex items-center justify-center cursor-pointer border-[1px] border-lightBlue">
+                  <input className="hidden" type="file" />
+                  <img src="https://kt.city/static/icon-upload.png" alt="" />
+                </label>
               </div>
             </div>
             <a
@@ -75,7 +101,7 @@ const Help = () => {
         </div>
         <div className="">
           <img
-            className="w-full h-full"
+            className="max-w-full"
             src="https://kt.city/static/img-support.png"
             alt=""
           />
