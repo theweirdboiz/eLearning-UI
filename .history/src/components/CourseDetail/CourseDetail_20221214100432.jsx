@@ -135,7 +135,7 @@ const CourseDetail = () => {
       </p>
       {/* Tabs */}
       <div className="border-b-lightBlue border-b" />
-      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b mb-20">
+      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b">
         <li
           onClick={() => handleActiveTab(1)}
           className={`${
@@ -183,7 +183,7 @@ const CourseDetail = () => {
         </li>
       </ul>
       {/* Rate */}
-      {activedTab === 2 && (
+      {activedTab === 5 && (
         <div className="flex flex-col my-6">
           <h3 className="font-semibold">Đánh giá từ học viên</h3>
           <div className="flex gap-6 items-center">
@@ -872,12 +872,10 @@ const CourseDetail = () => {
         </>
       )}
 
-      {activedTab === 5 && (
-        <Accordion
-          title="Tôi có được hỗ trợ khi học không ?"
-          content="Khi học các bạn sẽ được hỗ trợ khi gặp vấn đề khó khăn từ a đến z"
-        ></Accordion>
-      )}
+      <Accordion
+        title="Tôi có được hỗ trợ khi học không ?"
+        content="Khi học các bạn sẽ được hỗ trợ khi gặp vấn đề khó khăn từ a đến z"
+      ></Accordion>
     </div>
   );
 };

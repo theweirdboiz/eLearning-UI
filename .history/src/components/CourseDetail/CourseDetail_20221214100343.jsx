@@ -135,7 +135,7 @@ const CourseDetail = () => {
       </p>
       {/* Tabs */}
       <div className="border-b-lightBlue border-b" />
-      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b mb-20">
+      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b">
         <li
           onClick={() => handleActiveTab(1)}
           className={`${
@@ -183,7 +183,7 @@ const CourseDetail = () => {
         </li>
       </ul>
       {/* Rate */}
-      {activedTab === 2 && (
+      {activedTab === 5 && (
         <div className="flex flex-col my-6">
           <h3 className="font-semibold">Đánh giá từ học viên</h3>
           <div className="flex gap-6 items-center">
@@ -823,61 +823,55 @@ const CourseDetail = () => {
         </>
       )}
       {/* Comment */}
-      {activedTab === 3 && (
-        <>
-          <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-            <div className="flex items-center text-[1.8rem] mb-4">
-              <img
-                className="w-[4.5rem] h-[4.5rem] mr-6"
-                src="https://kt.city/static/avatar/avatar2.jpg"
-                alt=""
-              />
-              <h3 className=" font-semibold">Vũ</h3>
-              <span className="ml-auto">Gần đây</span>
-            </div>
-            <p>Rất ô sờ kê</p>
+      <>
+        <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
+          <div className="flex items-center text-[1.8rem] mb-4">
+            <img
+              className="w-[4.5rem] h-[4.5rem] mr-6"
+              src="https://kt.city/static/avatar/avatar2.jpg"
+              alt=""
+            />
+            <h3 className=" font-semibold">Vũ</h3>
+            <span className="ml-auto">Gần đây</span>
           </div>
-          <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-            <div className="flex items-center text-[1.8rem] mb-4">
-              <img
-                className="w-[4.5rem] h-[4.5rem] mr-6"
-                src="https://kt.city/static/avatar/avatar2.jpg"
-                alt=""
-              />
-              <h3 className=" font-semibold">Vũ</h3>
-              <span className="ml-auto">Gần đây</span>
-            </div>
-            <p>Rất ô sờ kê</p>
+          <p>Rất ô sờ kê</p>
+        </div>
+        <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
+          <div className="flex items-center text-[1.8rem] mb-4">
+            <img
+              className="w-[4.5rem] h-[4.5rem] mr-6"
+              src="https://kt.city/static/avatar/avatar2.jpg"
+              alt=""
+            />
+            <h3 className=" font-semibold">Vũ</h3>
+            <span className="ml-auto">Gần đây</span>
           </div>
-          <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-            <div className="flex items-center text-[1.8rem] mb-4">
-              <img
-                className="w-[4.5rem] h-[4.5rem] mr-6"
-                src="https://kt.city/static/avatar/avatar2.jpg"
-                alt=""
-              />
-              <h3 className=" font-semibold">Vũ</h3>
-              <span className="ml-auto">Gần đây</span>
-            </div>
-            <p>Rất ô sờ kê</p>
+          <p>Rất ô sờ kê</p>
+        </div>
+        <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
+          <div className="flex items-center text-[1.8rem] mb-4">
+            <img
+              className="w-[4.5rem] h-[4.5rem] mr-6"
+              src="https://kt.city/static/avatar/avatar2.jpg"
+              alt=""
+            />
+            <h3 className=" font-semibold">Vũ</h3>
+            <span className="ml-auto">Gần đây</span>
           </div>
-        </>
-      )}
-      {activedTab === 4 && (
-        <>
-          <div className="grid grid-cols-3 gap-x-5">
-            <Course></Course>
-            <Course></Course>
-          </div>
-        </>
-      )}
+          <p>Rất ô sờ kê</p>
+        </div>
+      </>
+      <>
+        <div className="grid grid-cols-3 gap-x-5">
+          <Course></Course>
+          <Course></Course>
+        </div>
+      </>
 
-      {activedTab === 5 && (
-        <Accordion
-          title="Tôi có được hỗ trợ khi học không ?"
-          content="Khi học các bạn sẽ được hỗ trợ khi gặp vấn đề khó khăn từ a đến z"
-        ></Accordion>
-      )}
+      <Accordion
+        title="Tôi có được hỗ trợ khi học không ?"
+        content="Khi học các bạn sẽ được hỗ trợ khi gặp vấn đề khó khăn từ a đến z"
+      ></Accordion>
     </div>
   );
 };

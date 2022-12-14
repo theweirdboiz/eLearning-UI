@@ -135,7 +135,7 @@ const CourseDetail = () => {
       </p>
       {/* Tabs */}
       <div className="border-b-lightBlue border-b" />
-      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b mb-20">
+      <ul className="flex justify-between pt-8 text-[2rem] border-b-lightBlue border-b">
         <li
           onClick={() => handleActiveTab(1)}
           className={`${
