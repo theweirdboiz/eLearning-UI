@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const isLogged = false;
   return (
     <div className="py-[10px] bg-white shadow-sm">
-      <div className="container">
+      <div className="container px-32">
         <div className="flex items-center justify-between gap-x-24">
           <div className="flex items-center justify-between gap-x-[30px] w-[60%]">
             <Link to="/" className="flex gap-x-32 w-[50%]">
@@ -44,23 +45,9 @@ const Header = () => {
           <div className="flex items-center w-[50%] gap-x-10  justify-between">
             <Link
               to="/active"
-              className="flex items-baseline gap-x-3 bg-lightBlue  px-4 py-4  rounded text-[14px] font-semibold"
+              className="flex items-baseline gap-x-3 px-4 py-4  rounded text-[14px] font-semibold"
             >
-              <span>Kích hoạt khóa học</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-                />
-              </svg>
+              <span>Kích hoạt mã</span>
             </Link>
             <Link to="/support" className="text-[14px] font-semibold">
               Hỗ trợ
@@ -69,7 +56,7 @@ const Header = () => {
               to="/auth"
               className="border-2 border-primary rounded-full py-3 px-6 text-[14px] font-semibold"
             >
-              Đăng nhập
+              {isLogged ? "Khu vực học tập" : "Đăng nhập"}
             </Link>
 
             <Link to="/cart" className="">
