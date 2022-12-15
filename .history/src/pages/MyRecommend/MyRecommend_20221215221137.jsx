@@ -25,32 +25,24 @@ const MyRecommend = () => {
         Khuyến nghị của tôi
       </div>
       <div className="mt-8 flex items-center justify-between mb-10 ">
-        <div className="relative">
-          <div className="flex items-center gap-x-3 p-4 border border-lightBlue rounded-xl ">
-            <span>Lọc trạng thái</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </div>
-          <ul className="absolute border border-lightBlue w-full rounded-xl bg-backGround hidden">
-            <li className="py-4 px-6 hover:bg-lightBlue">Tất cả</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chờ duyệt</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chấp nhận</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Từ chối</li>
-          </ul>
+        <div className="flex items-center gap-x-3 p-4 border border-lightBlue rounded-xl">
+          <span>Lọc trạng thái</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
         </div>
-        <div className="relative py-4 pl-8 pr-16 border border-lightBlue rounded-3xl">
+        <div className="relative py-4 px-10 pr-20 border border-lightBlue rounded-3xl">
           <input
             type="text"
             className="w-full rounded-xl"
@@ -62,7 +54,7 @@ const MyRecommend = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 absolute right-3 top-[50%] translate-y-[-50%]"
+            className="w-10 h-10 absolute right-5 top-[50%] translate-y-[-50%]"
           >
             <path
               strokeLinecap="round"

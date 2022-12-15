@@ -3,18 +3,15 @@ import { Link } from "react-router-dom";
 
 const Me = () => {
   return (
-    <div className="">
-      <h2 className="text-[2.4rem] font-bold mb-4 text-primary">
+    <div className="text-primary">
+      <h2 className="text-[2.4rem] font-bold mb-4">
         Tài khoản: Tran Doan Kien Thuc
       </h2>
       <p className="mb-12 text-lightBlack">
         Quản lý thông tin cá nhân, đổi quà & xem lại hình thức thanh toán
       </p>
       <div className="grid grid-cols-3 gap-6">
-        <Link
-          to="/profile"
-          className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2 text-primary"
-        >
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -30,12 +27,12 @@ const Me = () => {
             />
           </svg>
 
-          <div className="px-4 py-6 max-w-[20rem]">
+          <Link to="/profile" className="px-4 py-6 max-w-[20rem]">
             <h2 className="font-semibold">Thông tin cá nhân</h2>
             <p className="text-[1.3rem]  text-lightBlack">
               Chỉnh sửa hoặc cập nhật thông tin cá nhân của bạn
             </p>
-          </div>
+          </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -50,11 +47,8 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
-        <Link
-          to="/order-history"
-          className=" text-primary flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2"
-        >
+        </div>
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -90,11 +84,8 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
-        <Link
-          to="/balance"
-          className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2 text-primary"
-        >
+        </div>
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -129,12 +120,9 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
+        </div>
 
-        <Link
-          to="/my-recommend"
-          className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2 text-primary"
-        >
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -170,7 +158,7 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
+        </div>
       </div>
     </div>
   );

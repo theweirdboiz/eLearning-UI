@@ -91,10 +91,7 @@ const Me = () => {
             />
           </svg>
         </Link>
-        <Link
-          to="/balance"
-          className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2 text-primary"
-        >
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -129,12 +126,9 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
+        </div>
 
-        <Link
-          to="/my-recommend"
-          className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2 text-primary"
-        >
+        <div className="flex items-center gap-x-3 shadow-xl cursor-pointer rounded-2xl px-4 py-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -170,7 +164,7 @@ const Me = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-        </Link>
+        </div>
       </div>
     </div>
   );

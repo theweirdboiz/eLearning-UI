@@ -25,8 +25,8 @@ const MyRecommend = () => {
         Khuyến nghị của tôi
       </div>
       <div className="mt-8 flex items-center justify-between mb-10 ">
-        <div className="relative">
-          <div className="flex items-center gap-x-3 p-4 border border-lightBlue rounded-xl ">
+        <div>
+          <div className="flex items-center gap-x-3 p-4 border border-lightBlue rounded-xl relative">
             <span>Lọc trạng thái</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,11 +43,11 @@ const MyRecommend = () => {
               />
             </svg>
           </div>
-          <ul className="absolute border border-lightBlue w-full rounded-xl bg-backGround hidden">
-            <li className="py-4 px-6 hover:bg-lightBlue">Tất cả</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chờ duyệt</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chấp nhận</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Từ chối</li>
+          <ul className="absolute">
+            <li>Tất cả</li>
+            <li>Chờ duyệt</li>
+            <li>Chấp nhận</li>
+            <li>Từ chối</li>
           </ul>
         </div>
         <div className="relative py-4 pl-8 pr-16 border border-lightBlue rounded-3xl">

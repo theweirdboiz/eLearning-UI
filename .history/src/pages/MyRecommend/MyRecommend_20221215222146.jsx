@@ -43,7 +43,7 @@ const MyRecommend = () => {
               />
             </svg>
           </div>
-          <ul className="absolute border border-lightBlue w-full rounded-xl bg-backGround hidden">
+          <ul className="absolute border border-lightBlue w-full rounded-xl bg-backGround">
             <li className="py-4 px-6 hover:bg-lightBlue">Tất cả</li>
             <li className="py-4 px-6 hover:bg-lightBlue">Chờ duyệt</li>
             <li className="py-4 px-6 hover:bg-lightBlue">Chấp nhận</li>

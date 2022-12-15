@@ -43,11 +43,11 @@ const MyRecommend = () => {
               />
             </svg>
           </div>
-          <ul className="absolute border border-lightBlue w-full rounded-xl bg-backGround hidden">
-            <li className="py-4 px-6 hover:bg-lightBlue">Tất cả</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chờ duyệt</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Chấp nhận</li>
-            <li className="py-4 px-6 hover:bg-lightBlue">Từ chối</li>
+          <ul className="absolute border border-lightBlue w-full rounded-xl">
+            <li className="py-2 px-4">Tất cả</li>
+            <li className="py-2 px-4">Chờ duyệt</li>
+            <li className="py-2 px-4">Chấp nhận</li>
+            <li className="py-2 px-4">Từ chối</li>
           </ul>
         </div>
         <div className="relative py-4 pl-8 pr-16 border border-lightBlue rounded-3xl">
