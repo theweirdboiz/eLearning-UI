@@ -23,7 +23,6 @@ module.exports = {
       yellow: "#FED049",
       pinkPatel: "rgb(255, 213, 196)",
       lightRed: "rgb(250, 94, 94)",
-      bgLightRed: "rgba(255, 231, 229, 0.47)",
     },
     container: {
       center: true,

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const WithdrawalHistory = () => {
   return (
@@ -25,7 +24,7 @@ const WithdrawalHistory = () => {
         Lịch sử rút tiền
       </div>
       <p className="mt-10 p-4 text-lightRed bg-bgLightRed rounded-md">
-        Bạn chưa tạo bất cứ yêu cầu thanh toán nào
+        Bạn chưa cập nhật thông tin thanh toán
       </p>
     </>
   );

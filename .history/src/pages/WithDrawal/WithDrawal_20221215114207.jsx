@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const WithdrawalHistory = () => {
+const WithDrawal = () => {
   return (
     <>
       <div className="heading flex items-center gap-x-5">
@@ -22,13 +22,13 @@ const WithdrawalHistory = () => {
             d="M8.25 4.5l7.5 7.5-7.5 7.5"
           />
         </svg>
-        Lịch sử rút tiền
+        Yêu cầu thanh toán
       </div>
-      <p className="mt-10 p-4 text-lightRed bg-bgLightRed rounded-md">
-        Bạn chưa tạo bất cứ yêu cầu thanh toán nào
+      <p className="mt-10 p-4 text-lightRed bg-lightRed">
+        Bạn chưa cập nhật thông tin thanh toán
       </p>
     </>
   );
 };
 
-export default WithdrawalHistory;
+export default WithDrawal;
