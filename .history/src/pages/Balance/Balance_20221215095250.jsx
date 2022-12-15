@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Balance = () => {
   return (
-    <>
+    <div>
       <div className="heading flex items-center gap-x-5">
         <Link className="heading" to="/me">
           Cá nhân
@@ -110,7 +110,7 @@ const Balance = () => {
           Yêu cầu rút tiền
         </Link>
         <Link
-          to="/withdrawal-history"
+          to=""
           className="px-6 py-4 rounded-2xl bg-lightBlue flex items-center gap-x-5"
         >
           <svg
@@ -130,7 +130,7 @@ const Balance = () => {
           Lịch sử rút tiền
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

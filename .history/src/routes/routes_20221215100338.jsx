@@ -44,12 +44,12 @@ const publicRoutes = [
   },
   {
     path: config.routes.withdrawal,
-    component: Withdrawal,
+    component: WithDrawal,
     layout: MeLayout,
   },
   {
     path: config.routes.withdrawalHistory,
-    component: WithdrawalHistory,
+    component: WithDrawalHistory,
     layout: MeLayout,
   },
 ];

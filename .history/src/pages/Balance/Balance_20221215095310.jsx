@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Balance = () => {
   return (
-    <>
+    <div>
       <div className="heading flex items-center gap-x-5">
         <Link className="heading" to="/me">
           Cá nhân
@@ -130,7 +130,7 @@ const Balance = () => {
           Lịch sử rút tiền
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

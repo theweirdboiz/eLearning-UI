@@ -15,8 +15,8 @@ import OrderHistory from "@pages/OrderHistory";
 import MyClass from "@pages/MyClass";
 
 import Payment from "@pages/Payment";
-import Withdrawal from "@pages/Withdrawal";
-import WithdrawalHistory from "@pages/WithdrawalHistory";
+import WithDrawal from "@pages/WithDrawal";
+import WithDrawalHistory from "@pages/WithDrawalHistory";
 
 // Public routes
 const publicRoutes = [
@@ -43,13 +43,13 @@ const publicRoutes = [
     layout: MeLayout,
   },
   {
-    path: config.routes.withdrawal,
-    component: Withdrawal,
+    path: config.routes.withDrawal,
+    component: WithDrawal,
     layout: MeLayout,
   },
   {
-    path: config.routes.withdrawalHistory,
-    component: WithdrawalHistory,
+    path: config.routes.withDrawalHistory,
+    component: WithDrawalHistory,
     layout: MeLayout,
   },
 ];
