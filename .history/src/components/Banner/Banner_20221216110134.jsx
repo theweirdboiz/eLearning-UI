@@ -30,6 +30,8 @@ const Banner = () => (
       }}
       pagination={{
         clickable: true,
+        renderBullet: () =>
+          '<div className="p-3 rounded-full bg-lightBlue"></div>',
       }}
       modules={[Pagination, Autoplay]}
     >

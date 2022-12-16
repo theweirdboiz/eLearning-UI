@@ -17,7 +17,12 @@ const slides = [
     image: image1,
   },
 ];
-
+const pagination = {
+  clickable: true,
+  renderBullet: function (index, className) {
+    return '<span class="' + className + '">' + (index + 1) + "</span>";
+  },
+};
 const Banner = () => (
   <>
     <Swiper
@@ -28,9 +33,7 @@ const Banner = () => (
         delay: 3000,
         disableOnInteraction: false,
       }}
-      pagination={{
-        clickable: true,
-      }}
+      pagination={pagination}
       modules={[Pagination, Autoplay]}
     >
       {slides.map((slide, index) => (

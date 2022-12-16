@@ -59,11 +59,7 @@ option {
 }
 
 .swiper-pagination-bullet {
-  padding: 0.75rem;
-  background-color: #555;
-  &-active {
-    background-color: #0056d2;
-  }
+  padding: 1rem;
 }
 .container {
   max-width: 128rem;

@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const isLogged = false;
   return (
-    <div className="py-[1.2rem]">
+    <div className="py-[1.2rem] bg-white shadow-sm">
       <div className="container">
         <div className="flex items-center">
           <Link to="/" className="max-w-[11.5rem]">
             <img
               className="w-full max-h-[3.5rem]"
-              src="https://kt.city/static/ktcity-logo.png"
+              src="https://unica.vn/media/img/logo-unica.svg"
               alt=""
             />
           </Link>

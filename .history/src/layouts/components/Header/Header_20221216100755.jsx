@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const isLogged = false;
   return (
-    <div className="py-[1.2rem]">
+    <div className="py-[1.2rem] bg-white shadow-sm">
       <div className="container">
         <div className="flex items-center">
           <Link to="/" className="max-w-[11.5rem]">
             <img
               className="w-full max-h-[3.5rem]"
-              src="https://kt.city/static/ktcity-logo.png"
+              src="https://unica.vn/media/img/logo-unica.svg"
               alt=""
             />
           </Link>
           <div className="relative ml-auto flex justify-between items-center round">
             <input
-              className="min-w-[32rem] py-[1rem] pl-6 pr-16 rounded-full bg-lightBlue placeholder-primary placeholder:text-[#222] placeholder:font-medium"
+              className="min-w-[32rem] py-[1rem] pl-6 pr-16 rounded-full bg-lightBlue"
               type="text"
-              placeholder="Tìm khóa học, expert..."
+              placeholder="Tìm khóa học, giảng viên"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const Header = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-8 h-8 absolute right-6 cursor-pointer"
+              className="w-8 h-8 absolute right-4 cursor-pointer"
             >
               <path
                 strokeLinecap="round"
@@ -92,7 +92,7 @@ const Header = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-[2.8rem] h-[2.8rem]"
+                  className="w-[2.8rem] h-[2.6rem]"
                 >
                   <path
                     strokeLinecap="round"

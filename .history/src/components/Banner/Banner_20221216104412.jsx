@@ -21,11 +21,10 @@ const slides = [
 const Banner = () => (
   <>
     <Swiper
-      className=""
       loop
-      speed={500}
+      speed={1200}
       autoplay={{
-        delay: 3000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -35,8 +34,8 @@ const Banner = () => (
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="cursor-pointer">
-          <Link to="#" className="overflow-hidden">
-            <img src={slide.image} className="" alt="" />
+          <Link to="#">
+            <img src={slide.image} alt="" />
           </Link>
         </SwiperSlide>
       ))}

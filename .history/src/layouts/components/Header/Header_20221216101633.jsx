@@ -10,7 +10,7 @@ const Header = () => {
           <Link to="/" className="max-w-[11.5rem]">
             <img
               className="w-full max-h-[3.5rem]"
-              src="https://kt.city/static/ktcity-logo.png"
+              src="https://unica.vn/media/img/logo-unica.svg"
               alt=""
             />
           </Link>

@@ -7,7 +7,9 @@ import Expert from "@components/Expert";
 const Home = () => {
   return (
     <div className="">
-      <Banner></Banner>
+      <div className="w-full">
+        <Banner></Banner>
+      </div>
       <div className="my-[60px]">
         <h1 className="text-[24px] font-bold text-center uppercase mb-12">
           Những lý do bạn nên chọn chúng tôi

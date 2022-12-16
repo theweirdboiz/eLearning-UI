@@ -17,20 +17,22 @@ const slides = [
     image: image1,
   },
 ];
-
+const pagination = {
+  clickable: true,
+  renderBullet: function () {
+    return "<div className='p-4 rounded-full bg-primary'></div>";
+  },
+};
 const Banner = () => (
   <>
     <Swiper
-      className=""
       loop
       speed={500}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,
       }}
-      pagination={{
-        clickable: true,
-      }}
+      pagination={pagination}
       modules={[Pagination, Autoplay]}
     >
       {slides.map((slide, index) => (
@@ -41,6 +43,7 @@ const Banner = () => (
         </SwiperSlide>
       ))}
     </Swiper>
+    <span className="p-4 rounded-full bg-primary"></span>
   </>
 );
 export default Banner;

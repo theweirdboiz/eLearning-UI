@@ -7,7 +7,83 @@ import Expert from "@components/Expert";
 const Home = () => {
   return (
     <div className="">
-      <Banner></Banner>
+      <div className="w-full">
+        <Banner></Banner>
+      </div>
+      <div className="my-[60px]">
+        <h1 className="text-[20px] uppercase font-bold my-5">Top bán chạy</h1>
+        <div className="grid grid-cols-4 gap-[20px] shadow-md">
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+        </div>
+      </div>
+      <div className="my-[60px]">
+        <h1 className="text-[20px] uppercase font-bold my-5">
+          Siêu ưu đãi hôm nay
+        </h1>
+        <div className="grid grid-cols-4 gap-[20px] shadow-md">
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+        </div>
+      </div>
+      <div className="my-[60px]">
+        <div className="grid grid-cols-3 gap-x-[40px]">
+          <div className="p-4 shadow-2xl">
+            <div className="flex items-center justify-between">
+              <h1 className="text-[20px] font-semibold uppercase">
+                Mới ra mắt
+              </h1>
+              <span className="text-[14px] cursor-pointer">Xem thêm</span>
+            </div>
+            <New></New>
+          </div>
+          <div className="p-4 shadow-2xl">
+            <div className="flex items-center justify-between">
+              <h1 className="text-[20px] font-semibold uppercase">
+                Mới ra mắt
+              </h1>
+              <span className="text-[14px] cursor-pointer">Xem thêm</span>
+            </div>
+            <New></New>
+          </div>
+          <div className="p-4 shadow-2xl">
+            <div className="flex items-center justify-between">
+              <h1 className="text-[20px] font-semibold uppercase">
+                Mới ra mắt
+              </h1>
+              <span className="text-[14px] cursor-pointer">Xem thêm</span>
+            </div>
+            <New></New>
+          </div>
+        </div>
+      </div>
+      <div className="my-[60px]">
+        <h1 className="text-[20px] uppercase font-bold my-5">
+          Kinh doanh khởi nghiệp
+        </h1>
+        <div className="grid grid-cols-4 gap-[20px] shadow-md">
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+          <Course></Course>
+        </div>
+      </div>
       <div className="my-[60px]">
         <h1 className="text-[24px] font-bold text-center uppercase mb-12">
           Những lý do bạn nên chọn chúng tôi

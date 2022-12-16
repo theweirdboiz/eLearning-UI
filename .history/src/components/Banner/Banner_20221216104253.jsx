@@ -4,7 +4,6 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import image1 from "@assets/home/banner1.png";
 import image2 from "@assets/home/banner2.png";
-import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -21,11 +20,10 @@ const slides = [
 const Banner = () => (
   <>
     <Swiper
-      className=""
       loop
-      speed={500}
+      speed={1200}
       autoplay={{
-        delay: 3000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -34,10 +32,8 @@ const Banner = () => (
       modules={[Pagination, Autoplay]}
     >
       {slides.map((slide, index) => (
-        <SwiperSlide key={index} className="cursor-pointer">
-          <Link to="#" className="overflow-hidden">
-            <img src={slide.image} className="" alt="" />
-          </Link>
+        <SwiperSlide key={index}>
+          <img src={slide.image} alt="" />
         </SwiperSlide>
       ))}
     </Swiper>

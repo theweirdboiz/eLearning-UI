@@ -34,7 +34,7 @@ const Banner = () => (
       modules={[Pagination, Autoplay]}
     >
       {slides.map((slide, index) => (
-        <SwiperSlide key={index} className="cursor-pointer">
+        <SwiperSlide key={index} className="cursor-pointern">
           <Link to="#" className="overflow-hidden">
             <img src={slide.image} className="" alt="" />
           </Link>
