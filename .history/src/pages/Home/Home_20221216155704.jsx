@@ -127,13 +127,13 @@ const Home = () => {
           Xem thêm...
         </button>
         <div className="pt-[10rem]">
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center px-[2rem] mb-[10rem]">
+          <div className="flex items-center justify-between gap-x-[8rem] px-[2rem]">
             <img
-              className="max-w-[450px] mx-auto"
+              className="max-w-[450px]"
               src="https://kt.city/static/img-experts1.png"
               alt=""
             />
-            <div className="">
+            <div className="mb-[4rem]">
               <h1 className="mb-6 text-[2.8rem] font-extrabold">
                 Nâng cao kiến thức của bạn lên từng ngày, có kết quả tương xứng
                 với chi phí bỏ ra
@@ -150,7 +150,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center mb-[10rem]">
+          <div className="flex items-center justify-between gap-x-[30px]">
             <div className="">
               <h1 className="mb-6 text-[2.8rem] font-extrabold">
                 Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không
@@ -168,7 +168,7 @@ const Home = () => {
               </p>
             </div>
             <img
-              className="max-w-[450px] mx-auto"
+              className="max-w-[450px]"
               src="https://kt.city/static/img-experts2.png"
               alt=""
             />

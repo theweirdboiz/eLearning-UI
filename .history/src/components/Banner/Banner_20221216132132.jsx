@@ -19,9 +19,9 @@ const slides = [
 ];
 
 const Banner = () => (
-  <>
+  <div className="overflow-hidden">
     <Swiper
-      className=""
+      className="overflow-hidden"
       loop
       speed={500}
       autoplay={{
@@ -35,12 +35,12 @@ const Banner = () => (
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="cursor-pointer">
-          <Link to="#" className="">
-            <img src={slide.image} className="object-fill" alt="" />
+          <Link to="#" className="overflow-hidden">
+            <img src={slide.image} className="" alt="" />
           </Link>
         </SwiperSlide>
       ))}
     </Swiper>
-  </>
+  </div>
 );
 export default Banner;

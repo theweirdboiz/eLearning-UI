@@ -14,8 +14,7 @@ module.exports = {
         order: "minmax(220px, max-content) minmax(220px, max-content) auto",
       },
       boxShadow: {
-        shadowSmall: "2px 2px 1rem 0 rgba(66,165,245,0.15);",
-        shadow: "4px 4px 1.6rem 0 rgba(66,165,245,0.3)",
+        shadowSmall: "0 0 1rem 1px rgba(66,165,245,0.15);",
       },
     },
     colors: {

@@ -15,7 +15,7 @@ module.exports = {
       },
       boxShadow: {
         shadowSmall: "2px 2px 1rem 0 rgba(66,165,245,0.15);",
-        shadow: "4px 4px 1.6rem 0 rgba(66,165,245,0.3)",
+        shadow: "4px 4px 16px 0 rgba(66,165,245,0.3)",
       },
     },
     colors: {

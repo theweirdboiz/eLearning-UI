@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Course = ({
-  src = "https://kt.city/_next/image?url=%2Fstatic%2Flabel-trending.png&w=128&q=75",
-}) => {
+const Course = () => {
   return (
-    <Link
-      to="/course-detail"
-      className="rounded-2xl shadow-shadowSmall overflow-hidden hover:shadow-shadow"
-    >
+    <Link to="/course-detail" className="rounded-2xl overflow-hidden">
       <div className="">
         <div className="h-[18rem] w-full">
           <div className="">
@@ -18,8 +13,8 @@ const Course = ({
             />
           </div>
         </div>
-        <div className="py-[2.5rem] px-[1.5rem]">
-          <h3 className="text-[1.8rem] font-semibold mb-[1.5rem]">
+        <div className="p-[1.5rem]">
+          <h3 className="font-semibold mb-[1.5rem]">
             Phùng Thái Học: Khóa học viết quảng cáo - nghệ thuật của tư duy và
             ngôn từ
           </h3>
@@ -35,8 +30,9 @@ const Course = ({
             <div className="text-[1.6rem]">
               <div className="">
                 <div className="">
-                  <img src={src} alt="" />
+                  <img src="" alt="" />
                 </div>
+                <img src="" alt="" />
               </div>
             </div>
           </div>

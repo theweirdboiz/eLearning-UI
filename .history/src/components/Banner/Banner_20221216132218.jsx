@@ -36,7 +36,7 @@ const Banner = () => (
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="cursor-pointer">
           <Link to="#" className="">
-            <img src={slide.image} className="object-fill" alt="" />
+            <img src={slide.image} className="w-full object-fill" alt="" />
           </Link>
         </SwiperSlide>
       ))}

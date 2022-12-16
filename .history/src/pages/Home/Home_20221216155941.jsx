@@ -150,7 +150,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center mb-[10rem]">
+          <div className="grid grid-cols-2 gap-x-[3rem] items-center">
             <div className="">
               <h1 className="mb-6 text-[2.8rem] font-extrabold">
                 Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không

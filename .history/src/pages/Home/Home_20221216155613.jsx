@@ -127,9 +127,9 @@ const Home = () => {
           Xem thêm...
         </button>
         <div className="pt-[10rem]">
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center px-[2rem] mb-[10rem]">
+          <div className="flex items-center justify-between gap-x-[8rem] px-[2rem]">
             <img
-              className="max-w-[450px] mx-auto"
+              className="max-w-[450px]"
               src="https://kt.city/static/img-experts1.png"
               alt=""
             />
@@ -150,25 +150,22 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center mb-[10rem]">
+          <div className="flex items-center justify-between gap-x-[30px]">
             <div className="">
               <h1 className="mb-6 text-[2.8rem] font-extrabold">
                 Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không
                 giới hạn giá trị
               </h1>
-              <p className="mb-[2rem]">
+              <p>
                 Xây dựng cộng đồng của riêng bạn & nhận lại không giới hạn giá
                 trị. XXX & hệ thống đối tác sẽ quảng bá kiến thức hữu ích tới
-                hàng trăm ngàn cá nhân có nhu cầu cải thiện chuyên môn.
-              </p>
-              <p>
-                XXX tập trung xây dựng hình ảnh, thương hiệu cho bạn 1 cách hoàn
-                chỉnh. Ngoài ra, tất cả các vấn đề về công nghệ luôn được tối
-                ưu.
+                hàng trăm ngàn cá nhân có nhu cầu cải thiện chuyên môn. XXX tập
+                trung xây dựng hình ảnh, thương hiệu cho bạn 1 cách hoàn chỉnh.
+                Ngoài ra, tất cả các vấn đề về công nghệ luôn được tối ưu.
               </p>
             </div>
             <img
-              className="max-w-[450px] mx-auto"
+              className="max-w-[450px]"
               src="https://kt.city/static/img-experts2.png"
               alt=""
             />

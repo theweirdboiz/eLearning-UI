@@ -33,7 +33,7 @@ const Home = () => {
           <div className="grid grid-cols-3 gap-x-[3rem]">
             <Course></Course>
             <Course></Course>
-            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
+            <Course></Course>
           </div>
         </div>
         <div className="my-[6rem]">
@@ -60,7 +60,7 @@ const Home = () => {
             Nổi bật tháng này
           </h3>
           <div className="grid grid-cols-3 gap-x-[3rem]">
-            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
+            <Course></Course>
             <Course></Course>
             <Course></Course>
           </div>
@@ -119,61 +119,13 @@ const Home = () => {
           </h3>
           <div className="grid grid-cols-3 gap-x-[3rem]">
             <Course></Course>
-            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
+            <Course></Course>
             <Course></Course>
           </div>
         </div>
-        <button className="block mt-[3rem] py-2 px-6 rounded-2xl bg-lightBlue mx-auto">
+        <button className="mt-[3rem] py-2 px-6 rounded-2xl bg-lightBlue mx-2">
           Xem thêm...
         </button>
-        <div className="pt-[10rem]">
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center px-[2rem] mb-[10rem]">
-            <img
-              className="max-w-[450px] mx-auto"
-              src="https://kt.city/static/img-experts1.png"
-              alt=""
-            />
-            <div className="">
-              <h1 className="mb-6 text-[2.8rem] font-extrabold">
-                Nâng cao kiến thức của bạn lên từng ngày, có kết quả tương xứng
-                với chi phí bỏ ra
-              </h1>
-              <p className="mb-[2rem]">
-                Tất cả kiến thức tại XXX đều được review bởi đội ngũ chuyên gia
-                có kinh nghiệm. Hãy chọn Expert hoặc Brand mà bạn tin tưởng &
-                bắt đầu trải nghiệm.
-              </p>
-              <p>
-                Bạn cũng có thể theo lời khuyến nghị của những cá nhân đã trải
-                nghiệm trước đó, người bạn quen hoặc các KOLs để lựa chọn kiến
-                thức phù hợp.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-[3rem] items-center mb-[10rem]">
-            <div className="">
-              <h1 className="mb-6 text-[2.8rem] font-extrabold">
-                Trở thành Expert hoặc Brand, chia sẻ kiến thức & nhận lại không
-                giới hạn giá trị
-              </h1>
-              <p className="mb-[2rem]">
-                Xây dựng cộng đồng của riêng bạn & nhận lại không giới hạn giá
-                trị. XXX & hệ thống đối tác sẽ quảng bá kiến thức hữu ích tới
-                hàng trăm ngàn cá nhân có nhu cầu cải thiện chuyên môn.
-              </p>
-              <p>
-                XXX tập trung xây dựng hình ảnh, thương hiệu cho bạn 1 cách hoàn
-                chỉnh. Ngoài ra, tất cả các vấn đề về công nghệ luôn được tối
-                ưu.
-              </p>
-            </div>
-            <img
-              className="max-w-[450px] mx-auto"
-              src="https://kt.city/static/img-experts2.png"
-              alt=""
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
