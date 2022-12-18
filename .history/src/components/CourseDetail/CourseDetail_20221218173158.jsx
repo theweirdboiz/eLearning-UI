@@ -94,11 +94,11 @@ const CourseDetail = () => {
                 </li>
               </ul>
             </div>
-            <div className="px-12 py-10 bg-white rounded-2xl text-[2.4rem] w-[calc(40%_-_3rem)]">
+            <div className="px-12 py-10 bg-white rounded-2xl text-[2rem] w-[calc(40%_-_3rem)]">
               <div className="">
                 <span className="line-through">2412312đ</span>
                 <div className="flex justify-between items-center mb-[2rem]">
-                  <h2 className="font-semibold text-primary text-[3rem]">
+                  <h2 className="font-semibold text-primary text-[2.8rem]">
                     123123đ
                   </h2>
                   <h4 className="text-[1.8rem] px-3 py-2 bg-lightBlue rounded-2xl">
@@ -106,17 +106,21 @@ const CourseDetail = () => {
                   </h4>
                 </div>
                 <form action="">
-                  <input
-                    className="text-[2rem] p-2 border rounded-lg shadow-md w-full mb-6"
-                    type="text"
-                    placeholder="Tên của bạn"
-                  />
-                  <input
-                    className="text-[2rem] p-2 border rounded-lg shadow-md w-full mb-6"
-                    type="text"
-                    placeholder="Email của bạn"
-                  />
-                  <button className="bg-primary w-full p-2 rounded-2xl text-white ">
+                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
+                    <input
+                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
+                      type="text"
+                      placeholder="Tên của bạn"
+                    />
+                  </div>
+                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
+                    <input
+                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
+                      type="email"
+                      placeholder="Email của bạn"
+                    />
+                  </div>
+                  <button className="bg-primary w-full p-4 rounded-2xl text-white ">
                     Đăng ký học (online)
                   </button>
                   <h6 className="text-[1.8rem] text-center my-6">
