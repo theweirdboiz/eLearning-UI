@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    backgroundSize: {
+      lesson: "100% 29.5rem",
+      cover: "cover",
+    },
+    backgroundPosition: {
+      detail: "center top",
+    },
     extend: {
       backgroundImage: {
         "home-logo": "@assets/home/logo.svg",
@@ -10,10 +17,12 @@ module.exports = {
         auth: "url('https://source.unsplash.com/random')",
         hero: "url('https://kt.city/static/lp-headerbg.png')",
         coming: "url('https://kt.city/static/upcoming-banner5.jpg')",
+        trending: "url('https://kt.city/static/trending-banner-new.jpg')",
         cod: "url('https://i.ytimg.com/vi_webp/6Yp0J1tzhXk/sddefault.webp')",
         "e-voucher":
           "url('https://i.ytimg.com/vi_webp/_xDyPC2KL24/sddefault.webp')",
         "avatar-menu": "url('https://kt.city/static/img-nav-bg.png')",
+        test: "url('./src/assets/home/uyen.jpg')",
       },
       gridTemplateColumns: {
         order: "minmax(220px, max-content) minmax(220px, max-content) auto",
@@ -55,6 +64,8 @@ module.exports = {
       blue700: "rgba(29,78,216,0.5)",
       orangeLight: "rgba(232, 120, 51, 0.9)",
       orange: "rgba(232, 120, 51)"
+      gray: "#474747",
+      "gray-81": "#818181",
     },
     container: {
       center: true,
@@ -67,5 +78,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/line-clamp"), require("tailwind-scrollbar")],
 };

@@ -729,9 +729,9 @@ const CourseDetail = () => {
         {activedTab === 3 && (
           <>
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-              <div className="flex items-center text-[1.8rem] mb-4">
+              <div className="flex items-center text-[1.8rem] mb-4 ">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6"
+                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -743,7 +743,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6"
+                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -755,7 +755,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6"
+                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />

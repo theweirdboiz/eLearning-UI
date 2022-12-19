@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const courses = useSelector(state => state.shopCart.courses);
@@ -29,17 +30,21 @@ const Header = () => {
     };
   }, []);
 
+  const navLinkClass = ({ isActive }) => {
+    console.log(123);
+    return isActive ? "text-primary" : "";
+  };
   return (
     <div className="py-[1.2rem] relative z-50">
       <div className="container">
         <div className="flex items-center justify-between">
-          <Link to="/" className="max-w-[11.5rem]">
+          <NavLink to="/" className="max-w-[11.5rem]">
             <img
               className="w-full max-h-[3.5rem]"
               src="https://kt.city/static/ktcity-logo.png"
               alt=""
             />
-          </Link>
+          </NavLink>
           <div
             className={`lg:block  lg:relative lg:min-h-0 lg:p-0 lg:ml-auto hidden absolute p-[2rem] inset-0 top-full min-h-[100vh]  bg-backGround`}
           >
@@ -106,7 +111,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-baseline gap-x-3">
+          <div className="flex items-center gap-x-6">
             <div className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,18 +131,15 @@ const Header = () => {
             </div>
             <nav>
               <ul className="hidden lg:flex lg:items-center text-[1.8rem]">
-                <li className="ml-[4rem]">
-                  <Link
-                    to="/active"
-                    className="flex items-baseline gap-x-3 header__text"
-                  >
+                <li className="ml-[4rem] header__text">
+                  <NavLink to="/active" className="text-primary">
                     <span>Kích hoạt mã</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="ml-[2rem] group/menu-child">
-                  <Link
+                  <NavLink
                     to="/categories"
-                    className="flex items-center gap-x-3 header__text"
+                    className="flex gap-x-3 header__text"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -153,9 +155,9 @@ const Header = () => {
                       />
                     </svg>
                     <span>Khám phá</span>
-                  </Link>
+                  </NavLink>
                   <div className="header__categories--show">
-                    <Link
+                    <NavLink
                       to="/categories"
                       className="flex items-center whitespace-nowrap"
                     >
@@ -174,7 +176,7 @@ const Header = () => {
                         />
                       </svg>
                       <span>Danh mục</span>
-                    </Link>
+                    </NavLink>
                     <Link
                       to="/coming"
                       className="mx-[2.5rem] px-[2.5rem] flex items-center  border-x border-x-primary"

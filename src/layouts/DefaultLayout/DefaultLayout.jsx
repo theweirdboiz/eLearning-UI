@@ -3,11 +3,14 @@ import React from "react";
 import Header from "@layouts/components/Header";
 import Footer from "@layouts/components/Footer";
 
+// import MessengerCustomerChat from "react-messenger-customer-chat";
+
 const DefaultLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="content">{children}</div>
+      {children}
+      {/* <MessengerCustomerChat pageId="101294829508960" appId="890097692009410" /> */}
       <Footer />
     </>
   );
