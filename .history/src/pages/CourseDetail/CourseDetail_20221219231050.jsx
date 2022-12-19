@@ -34,9 +34,9 @@ const CourseDetail = () => {
             Dùng ngay mã giảm giá DONTET để giảm thêm 200K bạn nhé 😘
           </p>
         </div> */}
-      <div className="relative pb-[12rem] pt-[4rem] bg-hero bg-cover bg-no-repeat bg-detail">
+      <div className="relative pb-[12rem] pt-[4rem] bg-hero bg-cover bg-no-repeat bg-center bg-detail">
         <div className="container__page">
-          <div className="flex items-center justify-center gap-x-[1rem] max-w-[18rem]  text-white mb-[3rem] font-semibold bg-primary py-3 rounded-xl ">
+          <div className="flex items-center justify-center gap-x-[1rem] max-w-[18rem]  text-white text-[2.8rem] font-semibold bg-primary py-3 rounded-xl ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -65,7 +65,7 @@ const CourseDetail = () => {
           <div className="flex justify-between">
             <div className="w-[calc(60%-4rem)]">
               <di classNamem="max-h-[35rem]">
-                <div className="relative h-0 pb-[70%] rounded-2xl overflow-hidden">
+                <div className="relative h-0 pb-[65%] rounded-2xl overflow-hidden">
                   <img
                     src="https://static.kt.city/ck7ogwf9m04zh0872r31is970/photo_2020-08-11_17-27-31-1597141668992.jpg"
                     alt=""
@@ -130,7 +130,7 @@ const CourseDetail = () => {
         </div>
       </div>
       <div className="container__page">
-        <p className="pb-[5rem] text-[1.8rem] px-[18rem]">
+        <p className="py-[4rem] text-[1.8rem] px-[18rem]">
           Cryptocurrency hay tiền điện tử là một lĩnh vực rất trending trong
           những năm gần đây. Có rất nhiều nhà đầu tư cá nhân & team đã tạo được
           đòn bẫy tài chính "khủng" từ Crypto. Nhưng cũng do sự mới mẻ đó mà có
@@ -848,9 +848,9 @@ const CourseDetail = () => {
         {activedTab === 3 && (
           <>
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-              <div className="flex items-center text-[1.8rem] mb-4 ">
+              <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -862,7 +862,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -874,7 +874,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />

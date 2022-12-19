@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     backgroundSize: {
       lesson: "100% 29.5rem",
-      cover: "cover",
     },
     backgroundPosition: {
       detail: "center top",

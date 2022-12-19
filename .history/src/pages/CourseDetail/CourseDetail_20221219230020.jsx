@@ -14,7 +14,8 @@ const CourseDetail = () => {
 
   return (
     <>
-      {/* <div className="flex container__page pt-[4rem] py-[12rem] items-center gap-x-3 ">
+      <div className="bg-bgLightGreen">
+        {/* <div className="flex container__page pt-[4rem] py-[12rem] items-center gap-x-3 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -34,103 +35,104 @@ const CourseDetail = () => {
             Dùng ngay mã giảm giá DONTET để giảm thêm 200K bạn nhé 😘
           </p>
         </div> */}
-      <div className="relative pb-[12rem] pt-[4rem] bg-hero bg-cover bg-no-repeat bg-detail">
-        <div className="container__page">
-          <div className="flex items-center justify-center gap-x-[1rem] max-w-[18rem]  text-white mb-[3rem] font-semibold bg-primary py-3 rounded-xl ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-8 h-8"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-            <span>12345 đang học</span>
-          </div>
-          <h1 className="text-white text-[3rem] font-semibold mb-[3rem]">
-            Khoá học đầu tư Crypto 101 - Từng bước để hiểu và đầu tư đúng đắn
-            trong thị trường tiền điện tử.
-          </h1>
-          <div className="flex items-center justify-between w-[calc(60%_-_2rem)] text-[2.4rem] text-white mb-[3rem]">
-            <h4 className="">
-              Cập nhật <span>08/2022</span>
-            </h4>
-          </div>
-          <div className="flex justify-between">
-            <div className="w-[calc(60%-4rem)]">
-              <di classNamem="max-h-[35rem]">
-                <div className="relative h-0 pb-[70%] rounded-2xl overflow-hidden">
-                  <img
-                    src="https://static.kt.city/ck7ogwf9m04zh0872r31is970/photo_2020-08-11_17-27-31-1597141668992.jpg"
-                    alt=""
-                    className="w-full h-full absolute left-0 top-0"
-                  />
-                </div>
-              </di>
+        <div className="pb-[12rem] pt-[6rem] bg-hero bg-cover bg-no-repeat bg-center relative">
+          <div className="container__page">
+            <div className="flex items-center justify-center gap-x-[1rem] max-w-[18rem] mt-[3rem] text-white tex-[2.8rem] font-semibold bg-primary py-3 rounded-xl ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span>12345 đang học</span>
             </div>
-            <div className="p-[2.5rem] bg-white rounded-2xl text-[2rem] w-[calc(40%-4rem)]">
-              <div className="">
-                <span className="line-through">2412312đ</span>
-                <div className="flex justify-between items-center mb-[2rem]">
-                  <h2 className="font-semibold text-primary text-[2.8rem]">
-                    123123đ
-                  </h2>
-                  <h4 className="text-[1.8rem] px-3 py-2 text-lightGreen  bg-bgLightGreen rounded-2xl">
-                    Tiết kiệm 20%
-                  </h4>
+            <h1 className="text-white text-[3rem] font-semibold mb-[3rem]">
+              Khoá học đầu tư Crypto 101 - Từng bước để hiểu và đầu tư đúng đắn
+              trong thị trường tiền điện tử.
+            </h1>
+            <div className="flex items-center justify-between w-[calc(60%_-_2rem)] text-[2.4rem] text-white mb-[3rem]">
+              <h4 className="">
+                Cập nhật <span>08/2022</span>
+              </h4>
+            </div>
+            <div className="flex justify-between">
+              <div className="w-[calc(60%-4rem)]">
+                <di classNamem="max-h-[35rem]">
+                  <div className="relative h-0 pb-[65%] rounded-2xl overflow-hidden">
+                    <img
+                      src="https://static.kt.city/ck7ogwf9m04zh0872r31is970/photo_2020-08-11_17-27-31-1597141668992.jpg"
+                      alt=""
+                      className="w-full h-full absolute left-0 top-0"
+                    />
+                  </div>
+                </di>
+              </div>
+              <div className="px-12 py-10 bg-white rounded-2xl text-[2rem] w-[calc(40%-4rem)]">
+                <div className="">
+                  <span className="line-through">2412312đ</span>
+                  <div className="flex justify-between items-center mb-[2rem]">
+                    <h2 className="font-semibold text-primary text-[2.8rem]">
+                      123123đ
+                    </h2>
+                    <h4 className="text-[1.8rem] px-3 py-2 text-lightGreen  bg-bgLightGreen rounded-2xl">
+                      Tiết kiệm 20%
+                    </h4>
+                  </div>
+                  <form action="">
+                    <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
+                      <input
+                        className="text-[1.8rem] order rounded-lg shadow-primary w-full"
+                        type="text"
+                        placeholder="Tên của bạn"
+                      />
+                    </div>
+                    <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
+                      <input
+                        className="text-[1.8rem] order rounded-lg shadow-primary w-full"
+                        type="email"
+                        placeholder="Email của bạn"
+                      />
+                    </div>
+                    <button className="bg-primary w-full p-4 rounded-2xl text-white ">
+                      Thêm vào giỏ hàng
+                    </button>
+                    <h6 className="text-[1.8rem] text-center my-6">
+                      Hoàn tất đăng ký bằng
+                    </h6>
+                    <div className="text-[1.8rem] flex items-center justify-between gap-x-5">
+                      <div className="bg-lightBlue rounded-xl w-[50%] py-4 flex items-center justify-center cursor-pointer">
+                        <FontAwesomeIcon
+                          icon={faFacebookF}
+                          color="rgb(56, 92, 168)"
+                        ></FontAwesomeIcon>
+                        <span className="ml-3">Facebook</span>
+                      </div>
+                      <div className="bg-lightBlue rounded-xl px-10 w-[50%] py-4 flex items-center justify-center cursor-pointer">
+                        <FontAwesomeIcon
+                          icon={faGoogle}
+                          color="rgb(221, 75, 57)"
+                          fontSize="1.8rem"
+                        ></FontAwesomeIcon>
+                        <span className="ml-3">Google</span>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <form action="">
-                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
-                    <input
-                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
-                      type="text"
-                      placeholder="Tên của bạn"
-                    />
-                  </div>
-                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
-                    <input
-                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
-                      type="email"
-                      placeholder="Email của bạn"
-                    />
-                  </div>
-                  <button className="bg-primary w-full p-4 rounded-2xl text-white ">
-                    Thêm vào giỏ hàng
-                  </button>
-                  <h6 className="text-[1.8rem] text-center my-6">
-                    Hoàn tất đăng ký bằng
-                  </h6>
-                  <div className="text-[1.8rem] flex items-center justify-between gap-x-5">
-                    <div className="bg-lightBlue rounded-xl w-[50%] py-4 flex items-center justify-center cursor-pointer">
-                      <FontAwesomeIcon
-                        icon={faFacebookF}
-                        color="rgb(56, 92, 168)"
-                      ></FontAwesomeIcon>
-                      <span className="ml-3">Facebook</span>
-                    </div>
-                    <div className="bg-lightBlue rounded-xl px-10 w-[50%] py-4 flex items-center justify-center cursor-pointer">
-                      <FontAwesomeIcon
-                        icon={faGoogle}
-                        color="rgb(221, 75, 57)"
-                        fontSize="1.8rem"
-                      ></FontAwesomeIcon>
-                      <span className="ml-3">Google</span>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="container__page">
-        <p className="pb-[5rem] text-[1.8rem] px-[18rem]">
+        <p className="py-[4rem] text-[1.8rem] px-[18rem]">
           Cryptocurrency hay tiền điện tử là một lĩnh vực rất trending trong
           những năm gần đây. Có rất nhiều nhà đầu tư cá nhân & team đã tạo được
           đòn bẫy tài chính "khủng" từ Crypto. Nhưng cũng do sự mới mẻ đó mà có
@@ -848,9 +850,9 @@ const CourseDetail = () => {
         {activedTab === 3 && (
           <>
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
-              <div className="flex items-center text-[1.8rem] mb-4 ">
+              <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -862,7 +864,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
@@ -874,7 +876,7 @@ const CourseDetail = () => {
             <div className="p-4 pb-8 border-b border-b-lightBlue mt-8">
               <div className="flex items-center text-[1.8rem] mb-4">
                 <img
-                  className="w-[4.5rem] h-[4.5rem] mr-6  rounded-full "
+                  className="w-[4.5rem] h-[4.5rem] mr-6"
                   src="https://kt.city/static/avatar/avatar2.jpg"
                   alt=""
                 />
