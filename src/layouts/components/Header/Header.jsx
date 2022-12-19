@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const courses = useSelector(state => state.shopCart.courses);
+
   const isLogged = false;
   const [isSearch, setIsSearch] = useState(false);
   const [toggleSearch, setToggleSearch] = useState(false);
@@ -23,7 +26,6 @@ const Header = () => {
   useEffect(() => {
     document.onclick = () => {
       setToggleMenu(false);
-      console.log(123);
     };
   }, []);
 
@@ -257,7 +259,7 @@ const Header = () => {
                 />
               </svg>
               <span className="absolute -right-2 top-[50%] flex items-center justify-center bg-lightRed text-white text-base w-6 h-6 rounded-full">
-                0
+                {courses.length}
               </span>
             </Link>
             <div className="lg:hidden" onClick={(e) => handleToggleMenu(e)}>

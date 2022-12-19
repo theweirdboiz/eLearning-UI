@@ -1,40 +1,49 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Accordion from "@components/Accordion";
 import { accordionData } from "@utils";
 import Course from "@components/Course";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../reduxs/slices/shopCartSlice"
 
 const CourseDetail = () => {
+  const course = useSelector((state) => state.courseDetail.course);
+  const dispatch = useDispatch();
+
   const [activedTab, setActivedTab] = useState(1);
+  const [lessonNumber, setLessonNumber] = useState(0);
 
   const handleActiveTab = (index) => {
     setActivedTab(index);
   };
 
+  const getTime = (seconds) => {
+    let house = (seconds / 3600).toFixed();
+    seconds %= 3600;
+    let minutes = (seconds / 60).toFixed();
+    seconds %= 60;
+    return house + ":" + minutes + ":" + seconds;
+  }
+
+  useEffect(() => {
+    if (course) {
+      let count = 0;
+      for (let i = 0; i < course.chapters.length; i++) {
+        count += course.chapters[i].lessonVideos.length;
+        count += course.chapters[i].lessonQuestions.length;
+      }
+      setLessonNumber(count);
+    }
+  });
+
+  const handleAddToCard = () => {
+    dispatch(addToCart(course));
+  }
+
   return (
     <>
       <div className="bg-bgLightGreen">
-        <div className="flex container__page py-3 items-center gap-x-3 ">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="#23c27f"
-            className="w-10 h-10"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
-            />
-          </svg>
-
-          <p className="text-[2rem] font-medium text-lightGreen">
-            Dùng ngay mã giảm giá DONTET để giảm thêm 200K bạn nhé 😘
-          </p>
-        </div>
         <div className="pb-[12rem] pt-[6rem] bg-hero px-[8rem]  bg-cover bg-no-repeat bg-center">
           <div className="flex items-center justify-center gap-x-[1rem] max-w-[18rem] mx- text-white tex-[2.8rem] font-semibold bg-primary py-3 rounded-xl mb-[2.5rem]">
             <svg
@@ -54,92 +63,35 @@ const CourseDetail = () => {
             <span>12345 đang học</span>
           </div>
           <h1 className="text-white text-[3rem] font-semibold mb-[3rem]">
-            Khoá học đầu tư Crypto 101 - Từng bước để hiểu và đầu tư đúng đắn
-            trong thị trường tiền điện tử.
+            {course && course.title}
           </h1>
           <div className="flex items-center justify-between w-[calc(60%_-_2rem)] text-[2.4rem] text-white mb-[3rem]">
             <h4 className="">
-              Cập nhật <span>08/2022</span>
+              Cập nhật {course && <span>{course.manufacture}</span>}
             </h4>
           </div>
           <div className="flex justify-between">
             <div className="flex flex-col w-[calc(60%_-_2rem)]">
               <img
-                src="https://static.kt.city/ck7ogwf9m04zh0872r31is970/photo_2020-08-11_17-27-31-1597141668992.jpg"
+                src={course && course.coverUrl}
                 alt=""
-                className="max-h-[35rem] cursor-zoom-in"
+                className="max-h-[45rem] cursor-zoom-in"
               />
-              <ul className="flex justify-between p-4 bg-lightBlue rounded-b-xl">
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-                <li>
-                  <img src="" alt="" className="w-[8rem] h-[8rem]" />
-                </li>
-              </ul>
             </div>
-            <div className="px-12 py-10 bg-white rounded-2xl text-[2rem] w-[calc(40%_-_3rem)]">
+            <div className="px-12 py-10 bg-white rounded-2xl text-[2rem] min-w-[calc(30%_-_3rem)] h-fit">
               <div className="">
-                <span className="line-through">2412312đ</span>
-                <div className="flex justify-between items-center mb-[2rem]">
-                  <h2 className="font-semibold text-primary text-[2.8rem]">
-                    123123đ
-                  </h2>
-                  <h4 className="text-[1.8rem] px-3 py-2 text-lightGreen  bg-bgLightGreen rounded-2xl">
-                    Tiết kiệm 20%
-                  </h4>
+                <div className="text-5xl font-bold py-2 mb-[20px]">
+                  <span>{course && course.title}</span>
                 </div>
-                <form action="">
-                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
-                    <input
-                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
-                      type="text"
-                      placeholder="Tên của bạn"
-                    />
-                  </div>
-                  <div className="text-[1.8rem] p-5 border border-lightBlue  rounded-lg shadow-shadowSmall mb-6">
-                    <input
-                      className="text-[1.8rem] order rounded-lg shadow-primary w-full"
-                      type="email"
-                      placeholder="Email của bạn"
-                    />
-                  </div>
-                  <button className="bg-primary w-full p-4 rounded-2xl text-white ">
-                    Đăng ký học (online)
-                  </button>
-                  <h6 className="text-[1.8rem] text-center my-6">
-                    Hoàn tất đăng ký bằng
-                  </h6>
-                  <div className="text-[1.8rem] flex items-center justify-between gap-x-5">
-                    <div className="bg-lightBlue rounded-xl w-[50%] py-4 flex items-center justify-center cursor-pointer">
-                      <FontAwesomeIcon
-                        icon={faFacebookF}
-                        color="rgb(56, 92, 168)"
-                      ></FontAwesomeIcon>
-                      <span className="ml-3">Facebook</span>
-                    </div>
-                    <div className="bg-lightBlue rounded-xl px-10 w-[50%] py-4 flex items-center justify-center cursor-pointer">
-                      <FontAwesomeIcon
-                        icon={faGoogle}
-                        color="rgb(221, 75, 57)"
-                        fontSize="1.8rem"
-                      ></FontAwesomeIcon>
-                      <span className="ml-3">Google</span>
-                    </div>
-                  </div>
-                </form>
+                <div className="">
+                  <span>Số bài học: {course && lessonNumber}</span>
+                </div>
+                <div className="mt-[20px]">
+                  <span>Giá: {course && course.price}$</span>
+                </div>
+                <div className="mt-[20px] text-4xl font-bold py-4 px-5 text-center bg-orange rounded-3xl cursor-pointer text-white select-none hover:bg-orangeLight duration-300" onClick={handleAddToCard}>
+                  <span>Thêm vào giỏ hàng</span>
+                </div>
               </div>
             </div>
           </div>
@@ -147,14 +99,7 @@ const CourseDetail = () => {
       </div>
       <div className="container__page">
         <p className="py-[4rem] text-[1.8rem] px-[18rem]">
-          Cryptocurrency hay tiền điện tử là một lĩnh vực rất trending trong
-          những năm gần đây. Có rất nhiều nhà đầu tư cá nhân & team đã tạo được
-          đòn bẫy tài chính "khủng" từ Crypto. Nhưng cũng do sự mới mẻ đó mà có
-          rất nhiều bạn chưa hiểu hết về lĩnh vực này, từ đó dẫn đến những sai
-          lầm khi tin theo các dự án kém uy tín để rồi tiền mất tật mang. Trong
-          khoá học này, Coin98 - một đơn vị rất uy tín trong cộng đồng Crypto sẽ
-          hướng dẫn bạn từng bước về thị trường tiền điện tử & cách để có thể
-          đầu tư đúng đắn ngay từ đầu.
+          {course && course.description}
         </p>
         {/* Tabs */}
         <div className="border-b-lightBlue border-b" />
@@ -730,134 +675,54 @@ const CourseDetail = () => {
               Bạn sẽ nhận được
             </h2>
             <ul className="flex flex-wrap justify-between items-start text-[1.8 rem]">
-              <li className="w-[calc(50%-2rem)]">
-                <div className="flex gap-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="green"
-                    className="w-20 h-10 mr-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <p>
-                    Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong
-                    HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng
-                    Class Id và các attributes khác của HTML một cách chỉn chu
-                    từ đầu
-                  </p>
-                </div>
-              </li>
-              <li className="w-[calc(50%-2rem)]">
-                <div className="flex gap-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="green"
-                    className="w-20 h-10 mr-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <p>
-                    Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong
-                    HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng
-                    Class Id và các attributes khác của HTML một cách chỉn chu
-                    từ đầu
-                  </p>
-                </div>
-              </li>
-              <li className="w-[calc(50%-2rem)]">
-                <div className="flex gap-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="green"
-                    className="w-20 h-10 mr-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <p>
-                    Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong
-                    HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng
-                    Class Id và các attributes khác của HTML một cách chỉn chu
-                    từ đầu
-                  </p>
-                </div>
-              </li>
-              <li className="w-[calc(50%-2rem)]">
-                <div className="flex gap-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="green"
-                    className="w-20 h-10 mr-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <p>
-                    Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong
-                    HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng
-                    Class Id và các attributes khác của HTML một cách chỉn chu
-                    từ đầu
-                  </p>
-                </div>
-              </li>
-              <li className="w-[calc(50%-2rem)]">
-                <div className="flex gap-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="green"
-                    className="w-20 h-10 mr-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
-                  <p>
-                    Nắm vững chắc các kiến thức cơ bản về HTML, các thẻ trong
-                    HTML – HTML5, cách đặt tên theo chuẩn BEM, học cách sử dụng
-                    Class Id và các attributes khác của HTML một cách chỉn chu
-                    từ đầu
-                  </p>
-                </div>
-              </li>
+              {course &&
+                course.benefit.map((b, index) => {
+                  return (
+                    <li key={index} className="w-[calc(50%-2rem)]">
+                      <div className="flex gap-x-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={4}
+                          stroke="green"
+                          className="w-20 h-10 mr-5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          />
+                        </svg>
+                        <p>{b}</p>
+                      </div>
+                    </li>
+                  );
+                })}
             </ul>
             <h2 className="text-[2.4rem] text-primary font-semibold pl-5 my-[3rem] border-l-2 border-primary">
               Nội dung học tập
             </h2>
 
-            {accordionData.map(({ title, content }) => (
-              <Accordion title={title} content={content} />
-            ))}
+            {course &&
+              course.chapters.map((chapter) => (
+                <Accordion title={chapter.serial + ". " + chapter.title}>
+                  {
+                    chapter.lessonVideos.map((lv) => {
+                      return (
+                        <div className="flex justify-between bg-lightBlue p-2 my-2 rounded-xl">
+                          <div>
+                            <span>{lv.serial}. {lv.title}</span>
+                          </div>
+                          <div>
+                            <span>{getTime(lv.time)}</span>
+                          </div>
+                        </div>
+                      )
+                    })
+                  }
+                </Accordion>
+              ))}
           </>
         )}
         {/* Comment */}

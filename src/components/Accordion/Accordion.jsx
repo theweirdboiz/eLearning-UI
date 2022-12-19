@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import AccordionLayout from "@components/Accordion/AccordionLayout";
 
-const Accordion = ({ title, content }) => {
+const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
   const handleActive = () => setIsActive(!isActive);
   return (
     <AccordionLayout
-      title={title}
-      content={content}
+      title={props.title}
       isActive={isActive}
       handleActive={handleActive}
-    />
+    >
+      {props.children}
+    </AccordionLayout>
   );
 };
 

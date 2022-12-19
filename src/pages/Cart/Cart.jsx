@@ -1,6 +1,15 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteFromCart } from "../../reduxs/slices/shopCartSlice";
 
 const Cart = () => {
+  const courses = useSelector((state) => state.shopCart.courses);
+  const dispatch = useDispatch();
+
+  const handleDeleteFromCart = (index) => {
+    dispatch(deleteFromCart(index));
+  };
+
   return (
     <div className="container p-6">
       <div className="max-w-[865px] mx-auto my-[40px] ">
@@ -8,76 +17,30 @@ const Cart = () => {
           Xem lại yêu cầu đăng ký
         </h2>
         <div className="shadow-xl p-6 mb-[2rem] bg-white rounded-2xl">
-          <div className="flex items-center">
-            <img
-              src="https://static.kt.city/cjygynzur2r1b0919y0lp4rez/content-marketing-1585915305260.png"
-              alt=""
-              className="w-[180px] h-[160px] shadow-md rounded-md flex-shrink"
-            />
-            <div className="flex flex-col flex-grow-[1] p-6">
-              <h3 className="text-[20px] font-semibold  mb-3">
-                Khóa học Content Marketing A-Z - Bí quyết triển khai và sáng tạo
-                content đa kênh
-              </h3>
-              <div className="flex gap-x-[4rem] items-center">
-                <div className="text-[2.4rem] font-semibold text-primary">
-                  470,000đ
+          {courses.map((course, index) => {
+            return (
+              <div className="flex items-center">
+                <img
+                  src={course.coverUrl}
+                  alt=""
+                  className="w-[180px] h-[160px] shadow-md rounded-md flex-shrink"
+                />
+                <div className="flex flex-col flex-grow-[1] p-6">
+                  <h3 className="text-[20px] font-semibold  mb-3">
+                    {course.title}
+                  </h3>
+                  <div className="flex gap-x-[4rem] items-center">
+                    <div className="text-[2.4rem] font-semibold text-primary">
+                      {course.price} $
+                    </div>
+                    <span className="text-[2rem] text-primary ml-auto cursor-pointer" onClick={() => {handleDeleteFromCart(index)}}>
+                      Bỏ khóa này
+                    </span>
+                  </div>
                 </div>
-                <div className="line-through">899,000đ</div>
-                <span className="text-[2rem] text-primary ml-auto cursor-pointer">
-                  Bỏ khóa này
-                </span>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="shadow-xl p-6 mb-[2rem] bg-white rounded-2xl">
-          <div className="flex items-center">
-            <img
-              src="https://static.kt.city/cjygynzur2r1b0919y0lp4rez/content-marketing-1585915305260.png"
-              alt=""
-              className="w-[180px] h-[160px] shadow-md rounded-md flex-shrink"
-            />
-            <div className="flex flex-col flex-grow-[1] p-6">
-              <h3 className="text-[20px] font-semibold  mb-3">
-                Khóa học Content Marketing A-Z - Bí quyết triển khai và sáng tạo
-                content đa kênh
-              </h3>
-              <div className="flex gap-x-[4rem] items-center">
-                <div className="text-[2.4rem] font-semibold text-primary">
-                  470,000đ
-                </div>
-                <div className="line-through">899,000đ</div>
-                <span className="text-[2rem] text-primary ml-auto cursor-pointer">
-                  Bỏ khóa này
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="shadow-xl p-6 mb-[2rem] bg-white rounded-2xl">
-          <div className="flex items-center">
-            <img
-              src="https://static.kt.city/cjygynzur2r1b0919y0lp4rez/content-marketing-1585915305260.png"
-              alt=""
-              className="w-[180px] h-[160px] shadow-md rounded-md flex-shrink"
-            />
-            <div className="flex flex-col flex-grow-[1] p-6">
-              <h3 className="text-[20px] font-semibold  mb-3">
-                Khóa học Content Marketing A-Z - Bí quyết triển khai và sáng tạo
-                content đa kênh
-              </h3>
-              <div className="flex gap-x-[4rem] items-center">
-                <div className="text-[2.4rem] font-semibold text-primary">
-                  470,000đ
-                </div>
-                <div className="line-through">899,000đ</div>
-                <span className="text-[2rem] text-primary ml-auto cursor-pointer">
-                  Bỏ khóa này
-                </span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
         <div className="shadow-xl py-6 px-[4rem] bg-white rounded-2xl">
           <h3 className="text-[2.4rem] font-semibold mb-10">

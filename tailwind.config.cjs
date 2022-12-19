@@ -52,6 +52,9 @@ module.exports = {
       lightGreen: "#23c27f",
       bgLightGreen: "rgba(81, 229, 210, 0.17)",
       transparent: "transparent",
+      blue700: "rgba(29,78,216,0.5)",
+      orangeLight: "rgba(232, 120, 51, 0.9)",
+      orange: "rgba(232, 120, 51)"
     },
     container: {
       center: true,
