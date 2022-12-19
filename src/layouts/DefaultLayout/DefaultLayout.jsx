@@ -9,7 +9,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="content">{children}</div>
+      {children}
       {/* <MessengerCustomerChat pageId="101294829508960" appId="890097692009410" /> */}
       <Footer />
     </>
