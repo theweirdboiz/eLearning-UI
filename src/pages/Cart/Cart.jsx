@@ -1,6 +1,11 @@
 import React from "react";
+import PaypalBtn from "@components/PaypalBtn";
 
 const Cart = () => {
+  const product = {
+    description: "khóa hộc abc",
+    price: 20,
+  };
   return (
     <div className="container p-6">
       <div className="max-w-[865px] mx-auto my-[40px] ">
@@ -106,6 +111,9 @@ const Cart = () => {
             </div>
             <div className="payment__desc">Hoàn thành ngay</div>
             <input type="radio" />
+          </div>
+          <div className="flex items-center justify-between shadow-inner p-6 rounded-xl cursor-pointer">
+            <PaypalBtn product={product}></PaypalBtn>
           </div>
         </div>
         <div className="shadow-xl mt-[2rem] py-6 px-[4rem] bg-backGround rounded-2xl">
