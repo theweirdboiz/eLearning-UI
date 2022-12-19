@@ -14,6 +14,7 @@ function PaypalBtn({ product }) {
   return (
     <PayPalButtons
       style={{ layout: "horizontal" }}
+      //tạo hóa đơn
       createOrder={(data, actions) => {
         return actions.order.create({
           purchase_units: [
@@ -26,10 +27,14 @@ function PaypalBtn({ product }) {
           ],
         });
       }}
+      //nếu thanh toán thành công thì sẽ chạy đoạn này
       onApprove={async (data, actions) => {
         const order = await actions.order.capture();
         console.log(order);
         handleApprove(data.orderID);
+      }}
+      onError={(err) => {
+        console.log(err);
       }}
     ></PayPalButtons>
   );
