@@ -17,13 +17,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         order: "minmax(220px, max-content) minmax(220px, max-content) auto",
-        auto: "1fr 1fr",
-        slider: "repeat(3,90%)",
-        unset: "unset",
+        auto: "1fr auto",
+        slider: "repeat(3,90%) !important",
       },
       gridAutoColumns: {
         "33rem": "33rem",
-        "90%": "90%",
       },
       gridTemplateRows: {
         auto: "auto auto",

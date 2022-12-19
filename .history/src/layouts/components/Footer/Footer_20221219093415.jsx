@@ -29,7 +29,7 @@ const Footer = () => {
             202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP HCM
           </p>
         </div>
-        <div className="my-[1.5rem] md:w-[calc(20%-3rem)]">
+        <div className="my-[1.5rem] col-span-full md:w-[calc(20%-3rem)]">
           <h3 className="font-semibold mb-[1rem]">Hướng dẫn</h3>
           <p className="mt-[1rem]">KTcity 101</p>
           <p className="mt-[1rem]">Giới thiệu</p>
@@ -41,7 +41,7 @@ const Footer = () => {
           <p className="mt-[1rem]">Reviewer Program</p>
           <p className="mt-[1rem]">Blog kiến thức</p>
         </div>
-        <div className="my-[1.5rem] md:w-[calc(20%-3rem)] col-span-full">
+        <div className="my-[1.5rem] md:w-[calc(20%-3rem)]">
           <h3 className="font-semibold mb-[1rem]">Liên kết</h3>
           <div className="flex items-start flex-wrap gap-x-4 my-3">
             <a className="p-3 rounded-full bg-white w-[3rem] h-[3rem] flex items-center justify-center shadow-md cursor-pointer">

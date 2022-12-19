@@ -29,7 +29,7 @@ const Footer = () => {
             202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP HCM
           </p>
         </div>
-        <div className="my-[1.5rem] md:w-[calc(20%-3rem)]">
+        <div className="my-[1.5rem] col-span-full md:w-[calc(20%-3rem)]">
           <h3 className="font-semibold mb-[1rem]">Hướng dẫn</h3>
           <p className="mt-[1rem]">KTcity 101</p>
           <p className="mt-[1rem]">Giới thiệu</p>

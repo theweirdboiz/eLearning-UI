@@ -56,7 +56,7 @@ const CourseActive = () => {
       </div>
       <div
         onClick={(e) => handleBubbling(e)}
-        className={`fixed overflow-hidden inset-0 z-50 flex items-end lg:items-center justify-center  ${
+        className={`fixed overflow-hidden inset-0 z-50 flex items-center justify-center  ${
           openModal ? "opacity-100 visible" : "opacity-0 invisible"
         }  bg-fadeBlack`}
       >

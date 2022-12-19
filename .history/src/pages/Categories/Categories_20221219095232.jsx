@@ -4,9 +4,9 @@ const Categories = () => {
   return (
     <div className="pt-[1.5rem] pb-[3rem]">
       <div className="container__page">
-        <h2 className="text-[2rem] md:text-[3rem] md:flex md:justify-center text-center mb-[1.5rem] text-primary">
-          <h3 className="font-bold">Chào bạn👋</h3>
-          <h3>Hôm nay, bạn muốn học gì?</h3>
+        <h2 className="text-[3rem] text-center mb-[1.5rem] text-primary">
+          <span className="font-bold">Chào bạn</span> 👋
+          <span>Hôm nay, bạn muốn học gì?</span>
         </h2>
         <div className="lg:w-[48rem] mx-auto mb-[3.5rem] rounded-2xl bg-lightBlue flex items-center px-10 py-3">
           <svg
@@ -29,7 +29,7 @@ const Categories = () => {
             className="bg-transparent h-[4rem] w-full"
           />
         </div>
-        <ul className="hidden md:flex md:flex-wrap md:justify-center md:items-center mb-[3rem]">
+        <ul className="flex flex-wrap justify-center items-center mb-[3rem]">
           <li className="flex items-center mr-[2rem] mb-[2rem] text-[2rem] bg-lightBlue rounded-3xl cursor-pointer">
             <div className="flex items-center justify-center bg-primary text-white rounded-full w-[4rem] h-[4rem] mr-[1.25rem]">
               #
@@ -80,7 +80,7 @@ const Categories = () => {
           </li>
         </ul>
         <div className="mb-[3rem]">
-          <h2 className="flex items-center gap-x-6 mb-[2.5rem] heading-2">
+          <h3 className="flex items-center gap-x-6 text-[2rem] font-semibold mb-[2.5rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -101,17 +101,15 @@ const Categories = () => {
               />
             </svg>
             Xu hướng 24h qua
-          </h2>
-          <div className="slider__home">
+          </h3>
+          <div className="grid grid-cols-3 gap-[3rem]">
             <Course></Course>
-            <Course></Course>
-            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
             <Course></Course>
             <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
           </div>
         </div>
         <div className="mb-[3rem]">
-          <h2 className="flex items-center gap-x-6 mb-[2.5rem] heading-2">
+          <h3 className="flex items-center gap-x-6 text-[2rem] font-semibold mb-[2.5rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -127,21 +125,21 @@ const Categories = () => {
               />
             </svg>
             Nổi bật tháng này
-          </h2>
-          <div className="slider__home">
+          </h3>
+          <div className="grid grid-cols-3 gap-[3rem]">
+            <Course></Course>
+            <Course></Course>
             <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
-            <Course></Course>
-            <Course></Course>
           </div>
         </div>
         <div className="mb-[3rem]">
-          <h2 className="flex items-center gap-x-6 mb-[2.5rem] heading-2">
+          <h3 className="flex items-center gap-x-6 text-[2rem] font-semibold mb-[2.5rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="#0056d2"
+              stroke="rgb(250, 94, 94)"
               className="w-10 h-10"
             >
               <path
@@ -150,12 +148,18 @@ const Categories = () => {
                 d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
               />
             </svg>
-            Kiến thức chất lượng khác
-          </h2>
-          <div className="slider__home">
+            Tất cả kiến thức
+          </h3>
+          <div className="grid grid-cols-3 gap-[3rem]">
+            <Course></Course>
             <Course></Course>
             <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
             <Course></Course>
+            <Course></Course>
+            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
+            <Course></Course>
+            <Course></Course>
+            <Course src="https://kt.city/_next/image?url=%2Fstatic%2Flabel-new.png&w=128&q=75"></Course>
           </div>
         </div>
         <button className="block mt-[3rem] py-2 px-6 rounded-2xl bg-lightBlue mx-auto">

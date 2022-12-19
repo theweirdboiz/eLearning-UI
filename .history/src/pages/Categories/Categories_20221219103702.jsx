@@ -4,9 +4,9 @@ const Categories = () => {
   return (
     <div className="pt-[1.5rem] pb-[3rem]">
       <div className="container__page">
-        <h2 className="text-[2rem] md:text-[3rem] md:flex md:justify-center text-center mb-[1.5rem] text-primary">
-          <h3 className="font-bold">Chào bạn👋</h3>
-          <h3>Hôm nay, bạn muốn học gì?</h3>
+        <h2 className="text-[3rem] text-center mb-[1.5rem] text-primary">
+          <span className="font-bold">Chào bạn</span> 👋
+          <span>Hôm nay, bạn muốn học gì?</span>
         </h2>
         <div className="lg:w-[48rem] mx-auto mb-[3.5rem] rounded-2xl bg-lightBlue flex items-center px-10 py-3">
           <svg
@@ -29,7 +29,7 @@ const Categories = () => {
             className="bg-transparent h-[4rem] w-full"
           />
         </div>
-        <ul className="hidden md:flex md:flex-wrap md:justify-center md:items-center mb-[3rem]">
+        <ul className="flex flex-wrap justify-center items-center mb-[3rem]">
           <li className="flex items-center mr-[2rem] mb-[2rem] text-[2rem] bg-lightBlue rounded-3xl cursor-pointer">
             <div className="flex items-center justify-center bg-primary text-white rounded-full w-[4rem] h-[4rem] mr-[1.25rem]">
               #

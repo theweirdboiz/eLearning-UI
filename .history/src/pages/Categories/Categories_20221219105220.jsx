@@ -4,7 +4,7 @@ const Categories = () => {
   return (
     <div className="pt-[1.5rem] pb-[3rem]">
       <div className="container__page">
-        <h2 className="text-[2rem] md:text-[3rem] md:flex md:justify-center text-center mb-[1.5rem] text-primary">
+        <h2 className="text-[2rem] md:text-[3rem] md:flex text-center mb-[1.5rem] text-primary">
           <h3 className="font-bold">Chào bạn👋</h3>
           <h3>Hôm nay, bạn muốn học gì?</h3>
         </h2>

@@ -104,7 +104,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-baseline gap-x-3">
+          <div className="flex items-center gap-x-3">
             <div className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

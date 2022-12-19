@@ -4,7 +4,7 @@
 
 .slider {
   &__home {
-    @apply grid grid-cols-slider auto-cols-90% gap-[3rem] grid-flow-row snap-x snap-mandatory snap-always overflow-x-auto overflow-y-hidden touch-manipulation scroll-p-[1rem] lg:grid-cols-3 md:auto-cols-33rem md:grid-flow-col md:grid-cols-unset lg:grid-flow-row;
+    @apply grid grid-cols-slider auto-cols-90% gap-[3rem] grid-rows-auto   grid-flow-row  snap-x snap-mandatory snap-always overflow-x-auto overflow-y-hidden touch-manipulation scroll-p-[1rem] lg:grid-cols-3 md:auto-cols-33rem md:grid-flow-col;
     & > * {
       @apply snap-start;
     }

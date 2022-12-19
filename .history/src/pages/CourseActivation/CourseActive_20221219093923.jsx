@@ -8,10 +8,10 @@ const CourseActive = () => {
   };
   return (
     <div className="max-w-[52.5rem] text-center py-[4.5rem] px-[2rem] mx-auto">
-      <h2 className="text-[2rem] lg:text-[3rem] font-bold text-primary mb-[1.5rem]">
+      <h2 className="text-[3rem] font-bold text-primary mb-[1.5rem]">
         Kích hoạt mã
       </h2>
-      <h4 className="mb-[3.5rem] text-[1.8rem] lg:text-[2rem] font-medium">
+      <h4 className="mb-[3.5rem] text-[2rem] font-medium">
         Sử dụng mã COD hoặc E-voucher
       </h4>
       <img
@@ -19,13 +19,13 @@ const CourseActive = () => {
         src="https://kt.city/static/icon-active-cod.png"
         alt=""
       />
-      <div className="flex flex-col gap-y-6 mb-[2.5rem] lg:grid lg:grid-cols-auto lg:gap-x-5">
+      <div className="flex flex-col gap-y-6 mb-[2.5rem] md:grid md:grid-cols-auto md:gap-x-5">
         <input
           type="text"
           placeholder="Mã COD/E-voucher"
-          className="py-[1.5rem] px-[2rem] placeholder:text-lightBlack bg-darkWhite rounded-lg shadow-xl"
+          className="py-[1.5rem] px-[2rem] placeholder:text-lightBlack bg-lightBlue rounded-lg shadow-xl"
         />
-        <button className="block w-full lg:w-[15rem] p-[1.5rem] font-semibold rounded-lg bg-primary text-white ">
+        <button className="w-[15rem] p-[1.5rem] font-semibold rounded-lg bg-primary text-white md:w-full">
           Kích hoạt
         </button>
       </div>
@@ -56,7 +56,7 @@ const CourseActive = () => {
       </div>
       <div
         onClick={(e) => handleBubbling(e)}
-        className={`fixed overflow-hidden inset-0 z-50 flex items-end lg:items-center justify-center  ${
+        className={`fixed overflow-hidden inset-0 z-50 flex items-center justify-center  ${
           openModal ? "opacity-100 visible" : "opacity-0 invisible"
         }  bg-fadeBlack`}
       >
@@ -77,10 +77,10 @@ const CourseActive = () => {
             />
           </svg>
           <div
-            className="p-[5rem] max-h-[80vh] lg:grid lg:grid-cols-2 lg:gap-x-[5rem]"
+            className="p-[5rem] grid grid-cols-2 gap-x-[5rem]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="mb-[3rem]">
+            <div className="">
               <Link>
                 <img
                   className="w-[80rem] h-[25rem] rounded-lg"

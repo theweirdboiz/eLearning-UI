@@ -56,7 +56,7 @@ const CourseActive = () => {
       </div>
       <div
         onClick={(e) => handleBubbling(e)}
-        className={`fixed overflow-hidden inset-0 z-50 flex items-end lg:items-center justify-center  ${
+        className={`fixed overflow-hidden inset-0 z-50 flex items-center justify-center  ${
           openModal ? "opacity-100 visible" : "opacity-0 invisible"
         }  bg-fadeBlack`}
       >
@@ -77,10 +77,10 @@ const CourseActive = () => {
             />
           </svg>
           <div
-            className="p-[5rem] max-h-[80vh] lg:grid lg:grid-cols-2 lg:gap-x-[5rem]"
+            className="p-[5rem] grid grid-cols-2 gap-x-[5rem]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="mb-[3rem]">
+            <div className="">
               <Link>
                 <img
                   className="w-[80rem] h-[25rem] rounded-lg"
