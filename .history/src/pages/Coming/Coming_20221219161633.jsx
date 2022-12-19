@@ -2,7 +2,7 @@ import React from "react";
 const Coming = () => {
   return (
     <div>
-      <div className="bg-test h-[80rem] bg-center bg-cover bg-no-repeat flex justify-center items-end ">
+      <div className="bg-coming h-[80rem] bg-center bg-cover bg-no-repeat flex justify-center items-end ">
         <div className="-translate-y-[100%]">
           <h1 className="uppercase text-[4.8rem] font-bold text-white mb-3">
             Sắp diễn ra tại KTCity

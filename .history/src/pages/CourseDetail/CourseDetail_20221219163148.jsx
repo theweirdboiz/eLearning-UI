@@ -65,7 +65,7 @@ const CourseDetail = () => {
           <div className="flex justify-between">
             <div className="w-[calc(60%-4rem)]">
               <di classNamem="">
-                <div className="relative h-0 pb-[64%] rounded-2xl overflow-hidden">
+                <div className="relative h-0 pb-[65%]">
                   <img
                     src="https://static.kt.city/ck7ogwf9m04zh0872r31is970/photo_2020-08-11_17-27-31-1597141668992.jpg"
                     alt=""
