@@ -113,7 +113,7 @@ const Cart = () => {
             <input type="radio" />
           </div>
           <div className="flex items-center justify-between shadow-inner p-6 rounded-xl cursor-pointer">
-            {/* <PaypalBtn product={product}></PaypalBtn> */}
+            <PaypalBtn product={product}></PaypalBtn>
           </div>
         </div>
         <div className="shadow-xl mt-[2rem] py-6 px-[4rem] bg-backGround rounded-2xl">
